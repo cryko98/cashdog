@@ -21,7 +21,7 @@ import HowToBuy from './components/HowToBuy';
 import ProfitFetcher from './components/ProfitFetcher';
 
 export default function App() {
-  const CONTRACT_ADDRESS = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+  const CONTRACT_ADDRESS = 'CPfSD9eh9a6kEb8STHA9Bdh8C73tMWaXbkmKUpPepump';
   const [copied, setCopied] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
@@ -98,7 +98,7 @@ export default function App() {
           {/* Nav CTAs */}
           <div className="hidden md:flex items-center gap-4">
             <a 
-              href="https://t.me/cashdog_sol" // placeholder telegram, customizable later
+              href="https://t.me/cashdogonsol" // placeholder telegram, customizable later
               target="_blank"
               referrerPolicy="no-referrer"
               rel="noopener noreferrer"
@@ -165,7 +165,7 @@ export default function App() {
 
               <div className="flex flex-col gap-2 pt-2">
                 <a 
-                  href="https://t.me/cashdog_sol"
+                  href="https://t.me/cashdogonsol"
                   target="_blank"
                   referrerPolicy="no-referrer"
                   rel="noopener noreferrer"
@@ -258,7 +258,7 @@ export default function App() {
             </a>
 
             <a 
-              href="https://t.me/cashdog_sol"
+              href="https://t.me/cashdogonsol"
               target="_blank"
               referrerPolicy="no-referrer"
               rel="noopener noreferrer"
@@ -426,7 +426,7 @@ export default function App() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
-              href="https://t.me/cashdog_sol"
+              href="https://t.me/cashdogonsol"
               target="_blank"
               referrerPolicy="no-referrer"
               rel="noopener noreferrer"
