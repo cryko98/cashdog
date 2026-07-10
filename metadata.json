@@ -1,0 +1,6 @@
+{
+  "name": "Cash Dog",
+  "description": "The official Solana memecoin website for Cash Dog ($cashdog) - Cats scratch, Dogs fetch!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
