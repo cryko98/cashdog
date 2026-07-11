@@ -5,37 +5,37 @@ import { Sparkles, Coins, HelpCircle } from 'lucide-react';
 export default function ProfitFetcher() {
   const [solAmount, setSolAmount] = useState(5);
   
-  // Hardcoded theoretical swap rate for fun calculator calculations (e.g. 1 SOL = 50,000,000 $CASHDOG)
+  // Hardcoded theoretical swap rate for fun calculator calculations (e.g. 1 SOL = 50,000,000 $CASHBULL)
   const RATE = 50000000;
-  const cashdogAmount = solAmount * RATE;
+  const cashbullAmount = solAmount * RATE;
 
   // Derive bag sizes and descriptions
   const getTierDetails = (amount: number) => {
     if (amount < 2) {
       return {
-        title: 'Chihuahua Pack Member 🐕',
-        desc: "You are small but loud! You're in the pack, barking at the moon and ready to fetch standard treats.",
+        title: 'Baby Calf 🐂',
+        desc: "You are fresh to the market! Ready to grow, graze on Solana, and prepare for the big charge.",
         color: 'text-yellow-400',
         bg: 'border-yellow-400/20 bg-yellow-400/5',
       };
     } else if (amount < 10) {
       return {
-        title: 'Loyal Shiba Runner 🦊',
-        desc: 'Steady and fast on Solana. Sniffing out the 10x scent in the tall grass. Solid doggy status!',
-        color: 'text-amber-400',
-        bg: 'border-amber-400/20 bg-amber-400/5',
+        title: 'Bullish Runner 📈',
+        desc: 'Steady and powerful. Charging down the red candles with your heavy horns. Solid gains ahead!',
+        color: 'text-emerald-400',
+        bg: 'border-emerald-400/20 bg-emerald-400/5',
       };
     } else if (amount < 30) {
       return {
-        title: 'Golden Retriever Chad 🦮',
-        desc: 'Majestic, loyal, and bringing massive bags straight to the porch. You own the yard!',
+        title: 'Iron Horn Bull 🐂🔥',
+        desc: 'A true market driver. Smashing bears and delivering massive green candles straight to the herd.',
         color: 'text-primary',
         bg: 'border-primary/20 bg-primary/5',
       };
     } else {
       return {
-        title: '🚨 ULTRA ALPHA GIGA CASHDOG 🐺',
-        desc: 'Absolute pack leader. You do not just fetch cash; you own the treasury. Vercel-ready degen lord!',
+        title: '🚨 ULTRA GIGA CASHBULL CHAD 🔱',
+        desc: 'The Supreme Herd Leader. You do not just ride the bull market; you ARE the bull market. Relentless wealth power!',
         color: 'text-red-400',
         bg: 'border-red-400/30 bg-red-400/5',
       };
@@ -47,7 +47,7 @@ export default function ProfitFetcher() {
   return (
     <section className="relative py-20 px-4 bg-bg-dark z-20 overflow-hidden">
       <div className="absolute top-1/4 right-0 w-80 h-80 bg-primary/5 blur-[100px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-amber-500/5 blur-[100px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-emerald-500/5 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="max-w-4xl mx-auto">
         
@@ -74,11 +74,11 @@ export default function ProfitFetcher() {
 
               <h3 className="text-3xl sm:text-4xl font-display font-black text-white leading-tight uppercase">
                 WHAT'S YOUR <br />
-                <span className="text-gradient bg-gradient-to-r from-primary to-amber-500 bg-clip-text text-transparent text-glow-gold">DOG STATUS?</span>
+                <span className="text-gradient bg-gradient-to-r from-primary to-emerald-400 bg-clip-text text-transparent text-glow-green">BULL STATUS?</span>
               </h3>
 
               <p className="text-gray-400 font-sans text-sm leading-relaxed">
-                Enter your intended SOL swap size to see how many millions of $CASHDOG you can fetch and unlock your official pack ranking status.
+                Enter your intended SOL swap size to see how many millions of $CASHBULL you can charge and unlock your official herd ranking status.
               </p>
 
               {/* Slider Input */}
@@ -99,9 +99,9 @@ export default function ProfitFetcher() {
                 />
 
                 <div className="flex justify-between text-[10px] font-mono text-gray-500">
-                  <span>0.1 SOL (Pup)</span>
-                  <span>50 SOL (Hound)</span>
-                  <span>100 SOL (Alpha)</span>
+                  <span>0.1 SOL (Calf)</span>
+                  <span>50 SOL (Bull)</span>
+                  <span>100 SOL (Giga Chad)</span>
                 </div>
               </div>
             </div>
@@ -112,19 +112,19 @@ export default function ProfitFetcher() {
               {/* Output Token count */}
               <div>
                 <span className="text-[10px] font-mono text-gray-500 uppercase tracking-wider block mb-1">
-                  Estimated $CASHDOG Reward
+                  Estimated $CASHBULL Reward
                 </span>
                 
                 <div className="flex items-baseline gap-2">
-                  <span className="text-3xl sm:text-4xl font-display font-black text-white text-glow-gold">
-                    {cashdogAmount.toLocaleString()}
+                  <span className="text-3xl sm:text-4xl font-display font-black text-white text-glow-green">
+                    {cashbullAmount.toLocaleString()}
                   </span>
-                  <span className="text-primary font-mono text-xs font-bold">$CASHDOG</span>
+                  <span className="text-primary font-mono text-xs font-bold">$CASHBULL</span>
                 </div>
                 
                 <div className="mt-1 flex items-center gap-1.5 text-[10px] font-mono text-gray-400">
-                  <Coins className="w-3 h-3 text-amber-500" />
-                  <span>Rate: 1 SOL = {RATE.toLocaleString()} $CASHDOG</span>
+                  <Coins className="w-3 h-3 text-emerald-400" />
+                  <span>Rate: 1 SOL = {RATE.toLocaleString()} $CASHBULL</span>
                 </div>
               </div>
 

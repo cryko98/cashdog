@@ -6,14 +6,14 @@ export default function Tokenomics() {
     {
       label: 'Buy / Sell Tax',
       value: '0%',
-      desc: 'No taxes. No friction. Pure fetching speed.',
+      desc: 'No taxes. No friction. Pure charging speed.',
       icon: <Percent className="w-6 h-6 text-emerald-400" />,
       bg: 'bg-emerald-500/10 border-emerald-500/20',
     },
     {
       label: 'Liquidity Pool (LP)',
       value: '100% BURNT 🔥',
-      desc: 'LP tokens sent to the incinerator. Buried in the backyard forever.',
+      desc: 'LP tokens sent to the incinerator. Buried in the sand forever.',
       icon: <Flame className="w-6 h-6 text-red-400" />,
       bg: 'bg-red-500/10 border-red-500/20',
     },
@@ -26,10 +26,10 @@ export default function Tokenomics() {
     },
     {
       label: 'Security Audit',
-      value: 'PACK TRUSTED',
-      desc: 'Zero backdoor. Certified community-driven canine action.',
+      value: 'HERD TRUSTED',
+      desc: 'Zero backdoor. Certified community-driven bull-run action.',
       icon: <ShieldCheck className="w-6 h-6 text-primary" />,
-      bg: 'bg-amber-500/10 border-primary/20',
+      bg: 'bg-emerald-500/10 border-primary/20',
     }
   ];
 
@@ -46,11 +46,11 @@ export default function Tokenomics() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="px-3 py-1 bg-amber-500/10 border border-primary/30 text-primary text-xs font-mono font-bold tracking-widest rounded-full uppercase">
-              The Doggy Math
+            <span className="px-3 py-1 bg-emerald-500/10 border border-primary/30 text-primary text-xs font-mono font-bold tracking-widest rounded-full uppercase">
+              The Bullish Math
             </span>
             <h2 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-white tracking-tight uppercase">
-              🦴 <span className="text-gradient bg-gradient-to-r from-primary to-amber-500 bg-clip-text text-transparent text-glow-gold">DOGONOMICS</span>
+              🐂 <span className="text-gradient bg-gradient-to-r from-primary to-emerald-400 bg-clip-text text-transparent text-glow-green">BULLONOMICS</span>
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-gray-400 text-sm sm:text-base font-sans">
               Fair, transparent, and built for maximum loyalty. No VC allocations, no hidden unlocks. Just raw meme strength.
@@ -112,7 +112,7 @@ export default function Tokenomics() {
                 100% Community Owned
               </h3>
               <p className="text-gray-400 font-sans text-sm mb-6 leading-relaxed">
-                We didn't keep any bones for ourselves. The entire supply of $CASHDOG is released into the wild, distributed directly to the pack.
+                We didn't keep any bones or horn fees for ourselves. The entire supply of $CASHBULL is released into the wild, distributed directly to the herd.
               </p>
             </div>
 
@@ -124,7 +124,7 @@ export default function Tokenomics() {
                     <span className="text-primary">100%</span>
                   </div>
                   <div className="w-full bg-white/5 h-3.5 rounded-full overflow-hidden border border-white/10">
-                    <div className="bg-gradient-to-r from-amber-500 via-primary to-yellow-300 h-full w-full rounded-full" />
+                    <div className="bg-gradient-to-r from-emerald-500 via-primary to-green-300 h-full w-full rounded-full" />
                   </div>
                 </div>
 
@@ -140,8 +140,8 @@ export default function Tokenomics() {
               </div>
 
               <div className="mt-8 pt-4 border-t border-white/5 text-center">
-                <span className="text-xs font-mono font-black text-primary uppercase tracking-widest text-glow-gold">
-                  TOTAL SUPPLY: 1,000,000,000 $CASHDOG
+                <span className="text-xs font-mono font-black text-primary uppercase tracking-widest text-glow-green">
+                  TOTAL SUPPLY: 1,000,000,000 $CASHBULL
                 </span>
               </div>
             </div>

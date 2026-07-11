@@ -14,7 +14,7 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
       num: '01',
       title: 'Create Solana Wallet',
       desc: 'Download Phantom, Solflare, or your preferred Solana wallet. Available as a free browser extension or mobile app on App Store/Google Play.',
-      icon: <Wallet className="w-6 h-6 text-yellow-400" />,
+      icon: <Wallet className="w-6 h-6 text-emerald-400" />,
       link: 'https://phantom.app/',
       linkText: 'Download Phantom',
     },
@@ -22,20 +22,20 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
       num: '02',
       title: 'Fund with SOL',
       desc: 'Acquire SOL (Solana tokens) on a centralized exchange like Binance or Coinbase, or buy SOL directly in your wallet using integrated services like MoonPay.',
-      icon: <Download className="w-6 h-6 text-amber-500" />,
+      icon: <Download className="w-6 h-6 text-emerald-500" />,
     },
     {
       num: '03',
       title: 'Go to Raydium or Jupiter',
       desc: 'Visit jup.ag or raydium.io. Open the exchange interface inside your wallet browser or connect your desktop browser to the site.',
-      icon: <Compass className="w-6 h-6 text-emerald-400" />,
+      icon: <Compass className="w-6 h-6 text-green-400" />,
       link: 'https://jup.ag/',
       linkText: 'Go to Jupiter Exchange',
     },
     {
       num: '04',
-      title: 'Swap for $CASHDOG',
-      desc: 'Paste the Contract Address into Jupiter/Raydium, select the amount of SOL you want to swap, confirm your slippage, and swap! Welcome to the Pack!',
+      title: 'Swap for $CASHBULL',
+      desc: 'Paste the Contract Address into Jupiter/Raydium, select the amount of SOL you want to swap, confirm your slippage, and swap! Welcome to the Herd!',
       icon: <RefreshCw className="w-6 h-6 text-primary" />,
     }
   ];
@@ -49,7 +49,7 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
   return (
     <section id="how-to-buy" className="relative py-24 px-4 bg-gradient-to-t from-bg-dark to-black border-t border-border-dark z-20 overflow-hidden">
       {/* Decorative ambient visual background */}
-      <div className="absolute top-1/2 left-0 w-80 h-80 bg-amber-500/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-0 w-80 h-80 bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-6xl mx-auto">
         
@@ -61,14 +61,14 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="px-3 py-1 bg-amber-500/10 border border-primary/30 text-primary text-xs font-mono font-bold tracking-widest rounded-full uppercase">
+            <span className="px-3 py-1 bg-emerald-500/10 border border-primary/30 text-primary text-xs font-mono font-bold tracking-widest rounded-full uppercase">
               How To Acquire
             </span>
             <h2 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-white tracking-tight uppercase">
-              🛒 How to Buy <span className="text-gradient bg-gradient-to-r from-primary to-amber-500 bg-clip-text text-transparent text-glow-gold">$CASHDOG</span>
+              🛒 How to Buy <span className="text-gradient bg-gradient-to-r from-primary to-emerald-400 bg-clip-text text-transparent text-glow-green">$CASHBULL</span>
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-gray-400 text-sm sm:text-base font-sans">
-              Follow these simple steps to swap your SOL for $CASHDOG and join the squad of alpha money fetchers.
+              Follow these simple steps to swap your SOL for $CASHBULL and join the squad of alpha money chargers.
             </p>
           </motion.div>
         </div>
@@ -78,7 +78,7 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 p-6 sm:p-8 bg-bg-card border-2 border-primary/20 rounded-3xl glow-border-gold shadow-2xl relative overflow-hidden"
+          className="mb-16 p-6 sm:p-8 bg-bg-card border-2 border-primary/20 rounded-3xl glow-border-green shadow-2xl relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-2xl rounded-full pointer-events-none" />
           
@@ -88,21 +88,21 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
                 Official Smart Contract Address (Solana)
               </span>
               <h3 className="text-lg sm:text-xl font-display font-black text-white mb-1">
-                Copy $CASHDOG CA to swap safely
+                Copy $CASHBULL CA to swap safely
               </h3>
               <p className="text-xs text-gray-400 font-sans max-w-xl">
-                Always double check the CA before trading! Accept no lookalikes. There is only one genuine street-fetching Cash Dog.
+                Always double check the CA before trading! Accept no lookalikes. There is only one genuine street-charging Cash Bull.
               </p>
             </div>
 
             <div className="w-full md:w-auto flex flex-col sm:flex-row items-center gap-3">
-              <div className="w-full sm:w-auto px-4 py-3 bg-black/50 border border-white/10 rounded-xl font-mono text-xs sm:text-sm text-yellow-300 break-all select-all flex items-center justify-center min-h-[46px]">
+              <div className="w-full sm:w-auto px-4 py-3 bg-black/50 border border-white/10 rounded-xl font-mono text-xs sm:text-sm text-green-300 break-all select-all flex items-center justify-center min-h-[46px]">
                 {contractAddress}
               </div>
               
               <button
                 onClick={handleCopy}
-                className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-primary to-amber-500 hover:from-amber-500 hover:to-yellow-400 text-black font-display font-bold text-sm rounded-xl transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-lg active:scale-95"
+                className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-primary to-emerald-500 hover:from-emerald-500 hover:to-green-400 text-black font-display font-bold text-sm rounded-xl transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-lg active:scale-95"
               >
                 <AnimatePresence mode="wait">
                   {copied ? (

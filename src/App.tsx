@@ -21,7 +21,7 @@ import HowToBuy from './components/HowToBuy';
 import ProfitFetcher from './components/ProfitFetcher';
 
 export default function App() {
-  const CONTRACT_ADDRESS = 'CPfSD9eh9a6kEb8STHA9Bdh8C73tMWaXbkmKUpPepump';
+  const CONTRACT_ADDRESS = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
   const [copied, setCopied] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
@@ -36,20 +36,20 @@ export default function App() {
 
   const faqs = [
     {
-      q: 'What is Cash Dog ($cashdog)?',
-      a: 'Cash Dog is a legend born in 2021 on the Solana blockchain. He is a relentless street dog with one basic instinct: sniffing out bags and delivering them straight to his pack. No complicated tech-larping, no fake promises. Just pure loyalty and tokenized energy.'
+      q: 'What is Cash Bull ($cashbull)?',
+      a: 'Cash Bull is a legend born in 2021 on the Solana blockchain. He is a relentless street bull with one basic instinct: charging and crushing bears to deliver massive gains straight to the herd. No complicated tech-larping, no fake promises. Just pure loyalty and tokenized energy.'
     },
     {
       q: 'Why Solana?',
-      a: 'Solana is the native playground of degens, characterized by low fees, rapid blocktimes, and absolute decentralization. Cash Dog runs these streets because Solana provides the perfect ecosystem for fetching real cash with absolute efficiency.'
+      a: 'Solana is the native playground of degens, characterized by low fees, rapid blocktimes, and absolute decentralization. Cash Bull runs these streets because Solana provides the perfect ecosystem for charging real cash with absolute efficiency.'
     },
     {
       q: 'Is there a presale or developer tax?',
-      a: 'Absolutely not! 100% of the token liquidity is burnt in the celestial incinerator, owner key is fully revoked, and buy/sell tax is locked at a perfect 0%. The team is entirely decentralized. No VC holds any leverage over the pack.'
+      a: 'Absolutely not! 100% of the token liquidity is burnt in the celestial incinerator, owner key is fully revoked, and buy/sell tax is locked at a perfect 0%. The team is entirely decentralized. No VC holds any leverage over the herd.'
     },
     {
       q: 'Is there any utility?',
-      a: 'Zero utility. Just loyalty and gains. $cashdog is here purely as a tribute to community unity and the thrill of the Solana bull run. Always fetch, never scratch.'
+      a: 'Zero utility. Just loyalty and gains. $cashbull is here purely as a tribute to community unity and the thrill of the Solana bull run. Always charge, never scratch.'
     }
   ];
 
@@ -76,21 +76,21 @@ export default function App() {
           <a href="#" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-full border-2 border-primary overflow-hidden shadow-md group-hover:scale-105 transition-transform">
               <img 
-                src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/cashdog.jpg?v=1783685482" 
-                alt="Cash Dog" 
+                src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/photo_2026-07-11_16-18-29.jpg?v=1783775937" 
+                alt="Cash Bull" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
             </div>
             <span className="font-display font-extrabold text-white text-lg tracking-tight group-hover:text-primary transition-colors">
-              CASH DOG <span className="text-primary text-xs font-mono font-bold ml-1">$CASHDOG</span>
+              CASH BULL <span className="text-primary text-xs font-mono font-bold ml-1">$CASHBULL</span>
             </span>
           </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8 text-sm font-mono font-bold">
             <a href="#story" className="text-gray-400 hover:text-white transition-colors">Story</a>
-            <a href="#tokenomics" className="text-gray-400 hover:text-white transition-colors">Dogonomics</a>
+            <a href="#tokenomics" className="text-gray-400 hover:text-white transition-colors">Bullonomics</a>
             <a href="#how-to-buy" className="text-gray-400 hover:text-white transition-colors">How To Buy</a>
             <a href="#calculator" className="text-gray-400 hover:text-white transition-colors">Rank Calculator</a>
           </div>
@@ -98,7 +98,7 @@ export default function App() {
           {/* Nav CTAs */}
           <div className="hidden md:flex items-center gap-4">
             <a 
-              href="https://t.me/cashdogonsol" // placeholder telegram, customizable later
+              href="https://t.me/cashbullonsol"
               target="_blank"
               referrerPolicy="no-referrer"
               rel="noopener noreferrer"
@@ -110,9 +110,9 @@ export default function App() {
             
             <a 
               href="#how-to-buy"
-              className="px-4 py-2 bg-gradient-to-r from-primary to-amber-500 hover:from-amber-500 hover:to-yellow-400 text-black font-display font-black text-xs rounded-xl shadow-lg hover:shadow-primary/20 transition-all duration-150"
+              className="px-4 py-2 bg-gradient-to-r from-primary to-emerald-500 hover:from-emerald-500 hover:to-green-400 text-black font-display font-black text-xs rounded-xl shadow-lg hover:shadow-primary/20 transition-all duration-150"
             >
-              BUY $CASHDOG
+              BUY $CASHBULL
             </a>
           </div>
 
@@ -146,7 +146,7 @@ export default function App() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-gray-400 hover:text-white py-1 transition-colors"
               >
-                Dogonomics
+                Bullonomics
               </a>
               <a 
                 href="#how-to-buy" 
@@ -165,7 +165,7 @@ export default function App() {
 
               <div className="flex flex-col gap-2 pt-2">
                 <a 
-                  href="https://t.me/cashdogonsol"
+                  href="https://t.me/cashbullonsol"
                   target="_blank"
                   referrerPolicy="no-referrer"
                   rel="noopener noreferrer"
@@ -179,7 +179,7 @@ export default function App() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="w-full justify-center px-4 py-2.5 bg-primary text-black font-display font-black text-xs rounded-xl text-center"
                 >
-                  BUY $CASHDOG
+                  BUY $CASHBULL
                 </a>
               </div>
             </motion.div>
@@ -207,12 +207,12 @@ export default function App() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, type: 'spring', damping: 15 }}
-            className="relative w-44 h-44 sm:w-52 sm:h-52 md:w-60 md:h-60 rounded-full border-4 border-primary p-2 shadow-[0_0_50px_rgba(251,191,36,0.3)] bg-gradient-to-br from-yellow-300 via-primary to-amber-600 mb-8"
+            className="relative w-44 h-44 sm:w-52 sm:h-52 md:w-60 md:h-60 rounded-full border-4 border-primary p-2 shadow-[0_0_50px_rgba(34,197,94,0.4)] bg-gradient-to-br from-emerald-400 via-primary to-green-600 mb-8"
           >
             <div className="w-full h-full rounded-full overflow-hidden border-2 border-black">
               <img 
-                src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/cashdog.jpg?v=1783685482" 
-                alt="Cash Dog Logo" 
+                src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/photo_2026-07-11_16-18-29.jpg?v=1783775937" 
+                alt="Cash Bull Logo" 
                 className="w-full h-full object-cover select-none pointer-events-none scale-105 hover:scale-110 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
@@ -220,7 +220,7 @@ export default function App() {
             
             {/* Spinning decorative orbit circles */}
             <div className="absolute -inset-4 border border-dashed border-primary/40 rounded-full animate-[spin_35s_linear_infinite] pointer-events-none" />
-            <div className="absolute -inset-8 border border-dashed border-amber-500/20 rounded-full animate-[spin_55s_linear_infinite_reverse] pointer-events-none" />
+            <div className="absolute -inset-8 border border-dashed border-emerald-500/20 rounded-full animate-[spin_55s_linear_infinite_reverse] pointer-events-none" />
           </motion.div>
 
           {/* Title and Slogan */}
@@ -231,15 +231,15 @@ export default function App() {
             className="max-w-4xl"
           >
             <h1 className="text-6xl sm:text-7xl md:text-8xl font-display font-black text-white tracking-tight leading-none uppercase select-none">
-              CASH DOG
+              CASH BULL
             </h1>
             
-            <div className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-primary uppercase mt-2 tracking-wide text-glow-gold">
-              $CASHDOG
+            <div className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-primary uppercase mt-2 tracking-wide text-glow-green">
+              $CASHBULL
             </div>
 
             <p className="mt-6 max-w-xl mx-auto text-gray-300 font-sans text-sm sm:text-base leading-relaxed">
-              While Cash Cat is busy taking selfies in the Robinhood wallet, Cash Dog is out here on Solana hunting real money and delivering it straight to the pack.
+              While Cash Cat is busy taking selfies in the Robinhood wallet, Cash Bull is out here on Solana hunting real money and delivering it straight to the herd.
             </p>
           </motion.div>
 
@@ -252,13 +252,13 @@ export default function App() {
           >
             <a 
               href="#how-to-buy"
-              className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary via-amber-500 to-yellow-400 hover:from-amber-500 hover:to-yellow-300 text-black font-display font-black text-sm tracking-wider rounded-xl shadow-[0_4px_25px_rgba(251,191,36,0.35)] hover:shadow-primary/50 hover:scale-[1.03] transition-all duration-200 uppercase text-center cursor-pointer"
+              className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary via-emerald-500 to-green-400 hover:from-emerald-500 hover:to-green-300 text-black font-display font-black text-sm tracking-wider rounded-xl shadow-[0_4px_25px_rgba(34,197,94,0.35)] hover:shadow-primary/50 hover:scale-[1.03] transition-all duration-200 uppercase text-center cursor-pointer"
             >
-              Buy $CASHDOG 💰
+              Buy $CASHBULL 🐂
             </a>
 
             <a 
-              href="https://t.me/cashdogonsol"
+              href="https://t.me/cashbullonsol"
               target="_blank"
               referrerPolicy="no-referrer"
               rel="noopener noreferrer"
@@ -278,7 +278,7 @@ export default function App() {
           >
             <div className="text-center sm:text-left">
               <span className="block text-[10px] font-mono text-gray-500 uppercase font-black">SOLANA CONTRACT ADDRESS</span>
-              <span className="font-mono text-xs text-yellow-200 break-all">{CONTRACT_ADDRESS}</span>
+              <span className="font-mono text-xs text-green-200 break-all">{CONTRACT_ADDRESS}</span>
             </div>
 
             <button
@@ -334,7 +334,7 @@ export default function App() {
       {/* Scrolling Memetic Slogans spacer (Forward direction) */}
       <LiveMemeTicker speed={25} />
 
-      {/* The Legend of Cash Dog */}
+      {/* The Legend of Cash Bull */}
       <LegendStory />
 
       {/* Reverse Scrolling Ticker spacer */}
@@ -356,11 +356,11 @@ export default function App() {
         <div className="max-w-4xl mx-auto">
           
           <div className="text-center mb-16">
-            <span className="px-3 py-1 bg-amber-500/10 border border-primary/30 text-primary text-xs font-mono font-bold tracking-widest rounded-full uppercase">
-              Curious Pups
+            <span className="px-3 py-1 bg-emerald-500/10 border border-primary/30 text-primary text-xs font-mono font-bold tracking-widest rounded-full uppercase">
+              Charging Bulls
             </span>
             <h2 className="mt-4 text-4xl sm:text-5xl font-display font-extrabold text-white tracking-tight uppercase">
-              🐶 FAQ <span className="text-gradient bg-gradient-to-r from-primary to-amber-500 bg-clip-text text-transparent text-glow-gold">UNLEASHED</span>
+              🐂 FAQ <span className="text-gradient bg-gradient-to-r from-primary to-emerald-400 bg-clip-text text-transparent text-glow-green">CHARGING</span>
             </h2>
           </div>
 
@@ -409,28 +409,28 @@ export default function App() {
         <div className="max-w-2xl mx-auto relative z-10 space-y-8">
           <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary mx-auto shadow-lg shadow-primary/20">
             <img 
-              src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/cashdog.jpg?v=1783685482" 
-              alt="Cash Dog Badge"
+              src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/photo_2026-07-11_16-18-29.jpg?v=1783775937" 
+              alt="Cash Bull Badge"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
           </div>
 
           <h2 className="text-4xl sm:text-5xl font-display font-black text-white leading-tight uppercase">
-            JOIN THE PACK TODAY
+            JOIN THE HERD TODAY
           </h2>
           
           <p className="text-gray-400 font-sans text-sm sm:text-base leading-relaxed">
-            Don't sit back while the dog fetches all the cash! Jump in the Telegram group, share the memes, and stand loyal with the pack of $CASHDOG handlers.
+            Don't sit back while the bull charges the market! Jump in the Telegram group, share the memes, and stand loyal with the herd of $CASHBULL handlers.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
-              href="https://t.me/cashdogonsol"
+              href="https://t.me/cashbullonsol"
               target="_blank"
               referrerPolicy="no-referrer"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary to-amber-500 hover:from-amber-500 hover:to-yellow-300 text-black font-display font-black text-sm rounded-xl transition-all duration-150 flex items-center justify-center gap-2 cursor-pointer shadow-lg active:scale-95"
+              className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary to-emerald-500 hover:from-emerald-500 hover:to-green-300 text-black font-display font-black text-sm rounded-xl transition-all duration-150 flex items-center justify-center gap-2 cursor-pointer shadow-lg active:scale-95"
             >
               <TelegramIcon />
               JOIN OFFICIAL TELEGRAM
@@ -446,22 +446,22 @@ export default function App() {
           <div className="flex items-center justify-center gap-2 font-display font-black text-white uppercase text-sm tracking-wide">
             <div className="w-6 h-6 rounded-full overflow-hidden border border-primary">
               <img 
-                src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/cashdog.jpg?v=1783685482" 
-                alt="Cash Dog Mini Logo"
+                src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/photo_2026-07-11_16-18-29.jpg?v=1783775937" 
+                alt="Cash Bull Mini Logo"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
             </div>
-            <span>CASH DOG $CASHDOG</span>
+            <span>CASH BULL $CASHBULL</span>
           </div>
 
           <p className="leading-relaxed max-w-2xl mx-auto font-sans text-[11px] text-gray-500">
-            <Info className="w-4 h-4 text-amber-500/60 inline-block mr-1.5 align-text-bottom" />
-            <strong>Disclaimer:</strong> $cashdog is a memecoin with absolutely no utility or financial expectation of returns. It is purely built for community loyalty, memes, and canine glory. Cryptocurrencies and memecoins are highly volatile. Invest responsibly and do not trade with capital you cannot afford to lose.
+            <Info className="w-4 h-4 text-emerald-500/60 inline-block mr-1.5 align-text-bottom" />
+            <strong>Disclaimer:</strong> $cashbull is a memecoin with absolutely no utility or financial expectation of returns. It is purely built for community loyalty, memes, and bullish force. Cryptocurrencies and memecoins are highly volatile. Invest responsibly and do not trade with capital you cannot afford to lose.
           </p>
 
           <div className="pt-4 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px]">
-            <span>© 2026 CASH DOG. ALL RIGHTS RESERVED.</span>
+            <span>© 2026 CASH BULL. ALL RIGHTS RESERVED.</span>
             <span>POWERED BY SOLANA DEGENS</span>
           </div>
 

@@ -7,22 +7,23 @@ interface LiveMemeTickerProps {
 
 export default function LiveMemeTicker({ speed = 25, reverse = false }: LiveMemeTickerProps) {
   const items = [
-    '$CASHDOG TO THE MOON 🚀',
-    'CATS SCRATCH 🐱 DOGS FETCH 🐶',
-    'SOLANA BEAR MARKET SAVIOR 💰',
+    '$CASHBULL TO THE MOON 🚀',
+    'CATS SCRATCH 🐱 DOGS FETCH 🐶 BULLS CHARGE 🐂',
+    'SOLANA BULL MARKET FORCE 💚',
     'NO UTILITY JUST GAINS 🔥',
-    'FETCH THE CASH 💸',
+    'GREEN CANDLES ONLY 📈',
+    'CHARGING THE CASH 💸',
     '100% LOYALTY AND BAGS 💼',
-    'MINT REVOKED 🐾',
+    'SMASH THE BEARS 🐻❌',
     'LP BURNT 🔒',
-    'JOIN THE PACK 🐕',
+    'JOIN THE HERD 🐂',
   ];
 
   // Repeat the array to guarantee no gaps during infinite scrolling
   const repeatedItems = [...items, ...items, ...items];
 
   return (
-    <div className="relative w-full overflow-hidden bg-gradient-to-r from-amber-500 via-primary to-yellow-400 py-3 border-y-2 border-black font-display font-bold text-black uppercase tracking-wider text-sm sm:text-base md:text-lg shadow-lg z-20">
+    <div className="relative w-full overflow-hidden bg-gradient-to-r from-emerald-500 via-primary to-green-400 py-3 border-y-2 border-black font-display font-bold text-black uppercase tracking-wider text-sm sm:text-base md:text-lg shadow-lg z-20">
       <motion.div
         className="flex whitespace-nowrap gap-12 items-center"
         animate={{
