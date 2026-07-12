@@ -96,15 +96,14 @@ export default function App() {
           {/* Nav CTAs */}
           <div className="hidden md:flex items-center gap-4">
             <a 
-              href="#"
+              href="https://t.me/PUMPCATONSOLS"
+              target="_blank"
+              rel="noopener noreferrer"
+              referrerPolicy="no-referrer"
               className="px-4 py-2 bg-white border-2 border-black hover:bg-slate-50 text-slate-800 rounded-lg transition-all duration-150 flex items-center gap-2 cursor-pointer text-xs font-mono font-black pump-shadow"
-              onClick={(e) => {
-                e.preventDefault();
-                alert('Telegram link coming soon! Stay tuned, pack!');
-              }}
             >
               <TelegramIcon />
-              TELEGRAM (SOON)
+              TELEGRAM
             </a>
             
             <a 
@@ -164,16 +163,15 @@ export default function App() {
 
               <div className="flex flex-col gap-2 pt-2">
                 <a 
-                  href="#"
+                  href="https://t.me/PUMPCATONSOLS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  referrerPolicy="no-referrer"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="w-full justify-center px-4 py-2.5 bg-white border-2 border-black text-slate-800 rounded-lg flex items-center gap-2 text-xs font-mono font-black"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setMobileMenuOpen(false);
-                    alert('Telegram link coming soon! Stay tuned, pack!');
-                  }}
                 >
                   <TelegramIcon />
-                  TELEGRAM (SOON)
+                  TELEGRAM
                 </a>
                 <a 
                   href="#how-to-buy"
@@ -259,15 +257,14 @@ export default function App() {
             </a>
 
             <a 
-              href="#"
+              href="https://t.me/PUMPCATONSOLS"
+              target="_blank"
+              rel="noopener noreferrer"
+              referrerPolicy="no-referrer"
               className="w-full sm:w-auto px-8 py-4 bg-white border-2 border-black hover:bg-slate-50 text-slate-800 font-mono font-black text-sm rounded-xl transition-all duration-200 flex items-center justify-center gap-3 cursor-pointer pump-shadow"
-              onClick={(e) => {
-                e.preventDefault();
-                alert('Telegram link coming soon! Stay tuned, pack!');
-              }}
             >
               <TelegramIcon />
-              JOIN TELEGRAM (SOON)
+              JOIN TELEGRAM
             </a>
           </motion.div>
 
@@ -428,15 +425,14 @@ export default function App() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
-              href="#"
+              href="https://t.me/PUMPCATONSOLS"
+              target="_blank"
+              rel="noopener noreferrer"
+              referrerPolicy="no-referrer"
               className="w-full sm:w-auto px-8 py-4 bg-primary text-black border-2 border-black font-display font-black text-sm rounded-xl transition-all duration-150 flex items-center justify-center gap-2 cursor-pointer shadow-lg active:scale-95 pump-shadow hover:bg-[#13b06c]"
-              onClick={(e) => {
-                e.preventDefault();
-                alert('Telegram link coming soon! Stay tuned, pack!');
-              }}
             >
               <TelegramIcon />
-              TELEGRAM CHANNEL (SOON)
+              TELEGRAM CHANNEL
             </a>
           </div>
         </div>
