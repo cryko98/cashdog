@@ -14,29 +14,29 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
       num: '01',
       title: 'Create Solana Wallet',
       desc: 'Download Phantom, Solflare, or your preferred Solana wallet. Available as a free browser extension or mobile app on App Store/Google Play.',
-      icon: <Wallet className="w-6 h-6 text-emerald-400" />,
+      icon: <Wallet className="w-6 h-6 text-black" />,
       link: 'https://phantom.app/',
       linkText: 'Download Phantom',
     },
     {
       num: '02',
       title: 'Fund with SOL',
-      desc: 'Acquire SOL (Solana tokens) on a centralized exchange like Binance or Coinbase, or buy SOL directly in your wallet using integrated services like MoonPay.',
-      icon: <Download className="w-6 h-6 text-emerald-500" />,
+      desc: 'Acquire SOL (Solana tokens) on a centralized exchange like Binance or Coinbase, or buy SOL directly in your wallet using integrated payment providers.',
+      icon: <Download className="w-6 h-6 text-black" />,
     },
     {
       num: '03',
-      title: 'Go to Raydium or Jupiter',
-      desc: 'Visit jup.ag or raydium.io. Open the exchange interface inside your wallet browser or connect your desktop browser to the site.',
-      icon: <Compass className="w-6 h-6 text-green-400" />,
+      title: 'Connect to Pump.fun / Jupiter',
+      desc: 'Visit pump.fun during the bonding curve, or jup.ag/raydium.io after graduation. Open the interface inside your wallet browser or connect your desktop browser.',
+      icon: <Compass className="w-6 h-6 text-black" />,
       link: 'https://jup.ag/',
       linkText: 'Go to Jupiter Exchange',
     },
     {
       num: '04',
-      title: 'Swap for $CASHBULL',
-      desc: 'Paste the Contract Address into Jupiter/Raydium, select the amount of SOL you want to swap, confirm your slippage, and swap! Welcome to the Herd!',
-      icon: <RefreshCw className="w-6 h-6 text-primary" />,
+      title: 'Swap for $PUMPCAT',
+      desc: 'Paste the official Contract Address into the swap panel, select the amount of SOL you want to swap, adjust slippage, and lock in! Wear your green cap with pride!',
+      icon: <RefreshCw className="w-6 h-6 text-black" />,
     }
   ];
 
@@ -47,9 +47,9 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
   };
 
   return (
-    <section id="how-to-buy" className="relative py-24 px-4 bg-gradient-to-t from-bg-dark to-black border-t border-border-dark z-20 overflow-hidden">
+    <section id="how-to-buy" className="relative py-24 px-4 bg-white border-t-2 border-black z-20 overflow-hidden">
       {/* Decorative ambient visual background */}
-      <div className="absolute top-1/2 left-0 w-80 h-80 bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-0 w-80 h-80 bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-6xl mx-auto">
         
@@ -61,14 +61,14 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="px-3 py-1 bg-emerald-500/10 border border-primary/30 text-primary text-xs font-mono font-bold tracking-widest rounded-full uppercase">
+            <span className="px-4 py-1.5 bg-primary/20 border-2 border-black text-slate-900 text-xs font-mono font-black tracking-widest rounded-lg uppercase inline-block pump-shadow">
               How To Acquire
             </span>
-            <h2 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-white tracking-tight uppercase">
-              🛒 How to Buy <span className="text-gradient bg-gradient-to-r from-primary to-emerald-400 bg-clip-text text-transparent text-glow-green">$CASHBULL</span>
+            <h2 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-slate-900 tracking-tight uppercase">
+              🛒 How to Buy <span className="text-gradient bg-gradient-to-r from-primary to-emerald-600 bg-clip-text text-transparent text-glow-green">$PUMPCAT</span>
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-gray-400 text-sm sm:text-base font-sans">
-              Follow these simple steps to swap your SOL for $CASHBULL and join the squad of alpha money chargers.
+            <p className="mt-4 max-w-2xl mx-auto text-slate-600 text-sm sm:text-base font-sans font-medium">
+              Follow these simple steps to swap your SOL for $PUMPCAT and join the ultimate green hat gang on Solana.
             </p>
           </motion.div>
         </div>
@@ -78,31 +78,31 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 p-6 sm:p-8 bg-bg-card border-2 border-primary/20 rounded-3xl glow-border-green shadow-2xl relative overflow-hidden"
+          className="mb-16 p-6 sm:p-8 bg-white border-2 border-black rounded-2xl shadow-2xl relative overflow-hidden pump-shadow-lg"
         >
-          <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-2xl rounded-full pointer-events-none" />
+          <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-2xl rounded-full pointer-events-none" />
           
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
             <div className="text-center md:text-left">
-              <span className="inline-block text-[10px] font-mono font-bold uppercase tracking-widest px-2 py-0.5 bg-primary/10 border border-primary/30 text-primary rounded-md mb-2">
+              <span className="inline-block text-[10px] font-mono font-black uppercase tracking-widest px-2.5 py-1 bg-primary/10 border-2 border-black text-slate-900 rounded-lg mb-2">
                 Official Smart Contract Address (Solana)
               </span>
-              <h3 className="text-lg sm:text-xl font-display font-black text-white mb-1">
-                Copy $CASHBULL CA to swap safely
+              <h3 className="text-lg sm:text-xl font-display font-black text-slate-900 mb-1 uppercase">
+                Copy $PUMPCAT CA to swap safely
               </h3>
-              <p className="text-xs text-gray-400 font-sans max-w-xl">
-                Always double check the CA before trading! Accept no lookalikes. There is only one genuine street-charging Cash Bull.
+              <p className="text-xs text-slate-600 font-sans max-w-xl font-medium">
+                Always double check the CA before trading! Accept no lookalikes. There is only one genuine crying Pump Cat wearing the green hat.
               </p>
             </div>
 
             <div className="w-full md:w-auto flex flex-col sm:flex-row items-center gap-3">
-              <div className="w-full sm:w-auto px-4 py-3 bg-black/50 border border-white/10 rounded-xl font-mono text-xs sm:text-sm text-green-300 break-all select-all flex items-center justify-center min-h-[46px]">
+              <div className="w-full sm:w-auto px-4 py-3 bg-slate-50 border-2 border-black rounded-xl font-mono text-xs sm:text-sm text-primary font-black break-all select-all flex items-center justify-center min-h-[46px] pump-shadow">
                 {contractAddress}
               </div>
               
               <button
                 onClick={handleCopy}
-                className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-primary to-emerald-500 hover:from-emerald-500 hover:to-green-400 text-black font-display font-bold text-sm rounded-xl transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-lg active:scale-95"
+                className="w-full sm:w-auto px-6 py-3 bg-primary hover:bg-[#13b06c] text-black border-2 border-black font-display font-black text-sm rounded-xl transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-lg active:scale-95 pump-shadow"
               >
                 <AnimatePresence mode="wait">
                   {copied ? (
@@ -143,23 +143,23 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="p-6 bg-bg-card border border-white/5 hover:border-primary/20 rounded-2xl flex flex-col justify-between transition-colors duration-200 relative group"
+              className="p-6 bg-white border-2 border-black rounded-2xl flex flex-col justify-between transition-all duration-200 relative group pump-shadow hover:translate-y-[-4px] hover:translate-x-[-4px] hover:shadow-[6px_6px_0px_0px_#000000]"
             >
               {/* Number overlay */}
-              <div className="absolute top-4 right-4 text-4xl font-display font-black text-white/5 select-none group-hover:text-primary/10 transition-colors duration-200">
+              <div className="absolute top-4 right-4 text-4xl font-display font-black text-slate-100 select-none group-hover:text-primary/20 transition-colors duration-200">
                 {step.num}
               </div>
 
               <div>
-                <div className="p-3 bg-white/5 rounded-xl border border-white/10 w-fit mb-6">
+                <div className="p-3 bg-primary/10 rounded-xl border-2 border-black w-fit mb-6">
                   {step.icon}
                 </div>
                 
-                <h3 className="text-lg sm:text-xl font-display font-extrabold text-white mb-2">
+                <h3 className="text-lg sm:text-xl font-display font-extrabold text-slate-900 mb-2 uppercase">
                   {step.title}
                 </h3>
                 
-                <p className="text-gray-400 font-sans text-xs sm:text-sm leading-relaxed mb-6">
+                <p className="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed mb-6 font-medium">
                   {step.desc}
                 </p>
               </div>
@@ -170,14 +170,14 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
                   target="_blank"
                   referrerPolicy="no-referrer"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs font-mono font-bold text-primary hover:text-amber-400 transition-colors duration-150"
+                  className="inline-flex items-center gap-2 text-xs font-mono font-black text-slate-900 hover:text-primary transition-colors duration-150"
                 >
                   <span>{step.linkText}</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               ) : (
-                <span className="text-xs font-mono text-gray-500">
-                  Ready to fetch
+                <span className="text-xs font-mono text-slate-400 font-bold">
+                  Pump-Ready 🐱💚
                 </span>
               )}
             </motion.div>

@@ -1,6 +1,6 @@
 {
-  "name": "Cash Bull",
-  "description": "The official Solana memecoin website for Cash Bull ($cashbull) - Cats scratch, Dogs fetch, Bulls charge!",
+  "name": "Pump Cat",
+  "description": "The official Solana memecoin website for Pump Cat ($pumpcat) - The legendary crying cat with the green pill hat, born on pump.fun!",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

@@ -6,26 +6,32 @@
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  --color-primary: #22c55e; /* Electric Green */
-  --color-secondary: #10b981; /* Emerald */
-  --color-accent: #f59e0b; /* Amber Gold */
-  --color-bg-dark: #04060a;
-  --color-bg-card: #0a0f18;
-  --color-border-dark: #121a2a;
+  --color-primary: #24c07e; /* Pump.fun signature green */
+  --color-secondary: #13b06c; /* Deep emerald-green */
+  --color-accent: #ef4444; /* Retro red */
+  --color-bg-dark: #fafafa; /* Bright clean background */
+  --color-bg-card: #ffffff; /* Crisp white cards */
+  --color-border-dark: #e2e8f0; /* Soft border */
 }
 
 @layer utilities {
-  /* Glowing text effects */
-  .text-glow-green {
-    text-shadow: 0 0 12px rgba(34, 197, 94, 0.6);
+  /* Pump.fun signature neo-brutalist shadow & borders */
+  .pump-shadow {
+    box-shadow: 4px 4px 0px 0px #000000;
   }
-  .text-glow-amber {
-    text-shadow: 0 0 12px rgba(245, 158, 11, 0.4);
+  .pump-shadow-lg {
+    box-shadow: 8px 8px 0px 0px #000000;
+  }
+  .pump-shadow-primary {
+    box-shadow: 4px 4px 0px 0px #24c07e;
   }
   
-  /* Glowing border effects */
-  .glow-border-green {
-    box-shadow: 0 0 15px rgba(34, 197, 94, 0.2);
+  /* Glowing text effects */
+  .text-glow-green {
+    text-shadow: 0 0 12px rgba(36, 192, 126, 0.4);
+  }
+  .text-glow-accent {
+    text-shadow: 0 0 12px rgba(239, 68, 68, 0.4);
   }
 }
 
@@ -38,13 +44,13 @@ html {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #04060a;
+  background: #fafafa;
 }
 ::-webkit-scrollbar-thumb {
-  background: #121a2a;
+  background: #cbd5e1;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #22c55e;
+  background: #24c07e;
 }
 

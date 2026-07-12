@@ -7,7 +7,7 @@ interface CashParticle {
   y: number;
   rotation: number;
   scale: number;
-  type: 'bill' | 'coin' | 'bull' | 'chart';
+  type: 'bill' | 'pill' | 'cat' | 'chart';
   speed: number;
   rotationSpeed: number;
 }
@@ -19,9 +19,9 @@ export default function FallingCash() {
   const createParticle = useCallback((
     x: number, 
     y: number, 
-    type?: 'bill' | 'coin' | 'bull' | 'chart'
+    type?: 'bill' | 'pill' | 'cat' | 'chart'
   ): CashParticle => {
-    const types: ('bill' | 'coin' | 'bull' | 'chart')[] = ['bill', 'coin', 'bull', 'chart'];
+    const types: ('bill' | 'pill' | 'cat' | 'chart')[] = ['bill', 'pill', 'cat', 'chart'];
     const selectedType = type || types[Math.floor(Math.random() * types.length)];
     
     return {
@@ -111,8 +111,8 @@ export default function FallingCash() {
       <AnimatePresence>
         {particles.map((p) => {
           let renderEmoji = '💵';
-          if (p.type === 'coin') renderEmoji = '🪙';
-          if (p.type === 'bull') renderEmoji = '🐂';
+          if (p.type === 'pill') renderEmoji = '💊';
+          if (p.type === 'cat') renderEmoji = '🐱';
           if (p.type === 'chart') renderEmoji = '📈';
 
           return (
