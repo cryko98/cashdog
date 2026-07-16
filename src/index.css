@@ -7,31 +7,54 @@
   --font-mono: "JetBrains Mono", monospace;
 
   --color-primary: #24c07e; /* Pump.fun signature green */
-  --color-secondary: #13b06c; /* Deep emerald-green */
-  --color-accent: #ef4444; /* Retro red */
-  --color-bg-dark: #fafafa; /* Bright clean background */
+  --color-secondary: #10b981; /* High-Candle Green */
+  --color-accent: #1e293b; /* Cyber steel accent */
+  --color-bg-dark: #f8fafc; /* Bright clean background */
   --color-bg-card: #ffffff; /* Crisp white cards */
   --color-border-dark: #e2e8f0; /* Soft border */
 }
 
 @layer utilities {
-  /* Pump.fun signature neo-brutalist shadow & borders */
-  .pump-shadow {
-    box-shadow: 4px 4px 0px 0px #000000;
+  /* Futuristic neon glow shadows */
+  .cyber-glow-gold {
+    box-shadow: 0 4px 20px rgba(36, 192, 126, 0.08);
   }
-  .pump-shadow-lg {
-    box-shadow: 8px 8px 0px 0px #000000;
+  .cyber-glow-green {
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.12);
   }
-  .pump-shadow-primary {
-    box-shadow: 4px 4px 0px 0px #24c07e;
+  .cyber-glow-accent {
+    box-shadow: 0 4px 20px rgba(30, 41, 59, 0.05);
   }
   
   /* Glowing text effects */
+  .text-glow-gold {
+    text-shadow: 0 0 12px rgba(36, 192, 126, 0.3);
+  }
   .text-glow-green {
-    text-shadow: 0 0 12px rgba(36, 192, 126, 0.4);
+    text-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
   }
   .text-glow-accent {
-    text-shadow: 0 0 12px rgba(239, 68, 68, 0.4);
+    text-shadow: 0 0 12px rgba(30, 41, 59, 0.2);
+  }
+
+  /* Sleek cyber glassmorphism card */
+  .cyber-card {
+    background: #ffffff;
+    border: 1px solid rgba(36, 192, 126, 0.15);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02);
+  }
+  .cyber-card-hover {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .cyber-card-hover:hover {
+    transform: translateY(-4px);
+    border-color: rgba(36, 192, 126, 0.4);
+    box-shadow: 0 12px 30px rgba(36, 192, 126, 0.1);
+  }
+
+  /* Neon border scanlines */
+  .cyber-border-gradient {
+    border-image: linear-gradient(to right, #24c07e, #10b981) 1;
   }
 }
 
@@ -44,7 +67,7 @@ html {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #fafafa;
+  background: #f8fafc;
 }
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;

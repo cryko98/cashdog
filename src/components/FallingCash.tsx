@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { AnimatePresence } from 'motion/react';
 
 interface CashParticle {
   id: number;
@@ -7,7 +7,7 @@ interface CashParticle {
   y: number;
   rotation: number;
   scale: number;
-  type: 'bill' | 'pill' | 'cat' | 'chart';
+  type: 'coin' | 'bull' | 'rocket' | 'chart';
   speed: number;
   rotationSpeed: number;
 }
@@ -19,9 +19,9 @@ export default function FallingCash() {
   const createParticle = useCallback((
     x: number, 
     y: number, 
-    type?: 'bill' | 'pill' | 'cat' | 'chart'
+    type?: 'coin' | 'bull' | 'rocket' | 'chart'
   ): CashParticle => {
-    const types: ('bill' | 'pill' | 'cat' | 'chart')[] = ['bill', 'pill', 'cat', 'chart'];
+    const types: ('coin' | 'bull' | 'rocket' | 'chart')[] = ['coin', 'bull', 'rocket', 'chart'];
     const selectedType = type || types[Math.floor(Math.random() * types.length)];
     
     return {
@@ -31,16 +31,15 @@ export default function FallingCash() {
       rotation: Math.random() * 360,
       scale: 0.5 + Math.random() * 0.8,
       type: selectedType,
-      speed: 2 + Math.random() * 4,
-      rotationSpeed: (Math.random() - 0.5) * 10,
+      speed: 2 + Math.random() * 3,
+      rotationSpeed: (Math.random() - 0.5) * 8,
     };
   }, []);
 
-  // Spawn initial falling ambient money
+  // Spawn initial falling ambient items
   useEffect(() => {
     const interval = setInterval(() => {
       setParticles((prev) => {
-        // Keep active particles capped to prevent performance issues
         const active = prev.filter((p) => p.y < window.innerHeight + 100);
         if (active.length < 35) {
           const startX = Math.random() * window.innerWidth;
@@ -48,15 +47,14 @@ export default function FallingCash() {
         }
         return active;
       });
-    }, 400);
+    }, 450);
 
     return () => clearInterval(interval);
   }, [createParticle]);
 
-  // Click handler to burst money at cursor
+  // Click handler to burst items at cursor
   useEffect(() => {
     const handleGlobalClick = (e: MouseEvent) => {
-      // Don't burst if clicking input, button or link to keep form interactions normal
       const target = e.target as HTMLElement;
       if (
         target.tagName === 'BUTTON' || 
@@ -68,12 +66,11 @@ export default function FallingCash() {
         return;
       }
 
-      const burstCount = 8;
+      const burstCount = 6;
       const newBurst: CashParticle[] = [];
       for (let i = 0; i < burstCount; i++) {
         const particle = createParticle(e.clientX, e.clientY);
-        // Give click burst particles a slightly higher initial speed
-        particle.speed = 4 + Math.random() * 6;
+        particle.speed = 3 + Math.random() * 5;
         newBurst.push(particle);
       }
 
@@ -96,7 +93,6 @@ export default function FallingCash() {
             y: p.y + p.speed,
             rotation: p.rotation + p.rotationSpeed,
           }))
-          // Keep particles until they flow off the screen
           .filter((p) => p.y < window.innerHeight + 100)
       );
       animationFrameId = requestAnimationFrame(updateParticles);
@@ -110,20 +106,20 @@ export default function FallingCash() {
     <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
       <AnimatePresence>
         {particles.map((p) => {
-          let renderEmoji = '💵';
-          if (p.type === 'pill') renderEmoji = '💊';
-          if (p.type === 'cat') renderEmoji = '🐱';
+          let renderEmoji = '🪙';
+          if (p.type === 'bull') renderEmoji = '🐂';
+          if (p.type === 'rocket') renderEmoji = '🚀';
           if (p.type === 'chart') renderEmoji = '📈';
 
           return (
             <div
               key={p.id}
-              className="absolute select-none text-2xl filter drop-shadow-md"
+              className="absolute select-none text-xl sm:text-2xl filter drop-shadow-md"
               style={{
                 left: p.x,
                 top: p.y,
                 transform: `rotate(${p.rotation}deg) scale(${p.scale})`,
-                opacity: 0.7,
+                opacity: 0.5,
               }}
             >
               {renderEmoji}
