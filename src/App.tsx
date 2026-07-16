@@ -24,7 +24,7 @@ import HowToBuy from './components/HowToBuy';
 import ProfitFetcher from './components/ProfitFetcher';
 
 export default function App() {
-  const CONTRACT_ADDRESS = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+  const CONTRACT_ADDRESS = 'Fu9x3VvrNwgbfr2VBqNLuVadrzDAXpHL7ij1Lxynpump';
   const [copied, setCopied] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
