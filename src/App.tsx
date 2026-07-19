@@ -111,13 +111,15 @@ export default function App() {
 
           {/* Nav CTAs */}
           <div className="hidden md:flex items-center gap-4">
-            <button 
+            <a 
+              href="https://t.me/goldcatonsol"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-4 py-2 bg-slate-50 border border-slate-200 hover:border-primary/45 hover:bg-slate-100 text-slate-700 rounded-lg transition-all duration-150 flex items-center gap-2 cursor-pointer text-xs font-mono font-bold"
-              onClick={() => triggerToast('📡 SECURING VAULT: The royal team is configuring the encrypted Gold Cat Telegram channel. Stand by!')}
             >
               <TelegramIcon />
-              TELEGRAM (SOON)
-            </button>
+              TELEGRAM
+            </a>
             
             <a 
               href="#how-to-buy"
@@ -175,16 +177,16 @@ export default function App() {
               </a>
 
               <div className="flex flex-col gap-2 pt-2">
-                <button 
-                  className="w-full justify-center px-4 py-2.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg flex items-center gap-2 text-xs font-mono font-bold"
-                  onClick={() => {
-                    setMobileMenuOpen(false);
-                    triggerToast('📡 SECURING VAULT: The royal team is configuring the encrypted Gold Cat Telegram channel. Stand by!');
-                  }}
+                <a 
+                  href="https://t.me/goldcatonsol"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="w-full justify-center px-4 py-2.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg flex items-center gap-2 text-xs font-mono font-bold text-center"
                 >
                   <TelegramIcon />
-                  TELEGRAM (SOON)
-                </button>
+                  TELEGRAM
+                </a>
                 <a 
                   href="#how-to-buy"
                   onClick={() => setMobileMenuOpen(false)}
@@ -252,13 +254,15 @@ export default function App() {
                   BUY $goldcat 👑
                 </a>
 
-                <button 
+                <a 
+                  href="https://t.me/goldcatonsol"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full sm:w-auto px-8 py-4 bg-white border border-slate-200 hover:border-primary/40 hover:bg-slate-50 text-slate-700 font-mono font-bold text-sm rounded-xl transition-all duration-200 flex items-center justify-center gap-3 cursor-pointer shadow-sm"
-                  onClick={() => triggerToast('📡 SECURING VAULT: The royal team is configuring the encrypted Gold Cat Telegram channel. Stand by!')}
                 >
                   <TelegramIcon />
-                  JOIN TELEGRAM (SOON)
-                </button>
+                  JOIN TELEGRAM
+                </a>
               </motion.div>
 
               {/* Quick Contract Copy Bar */}
@@ -445,13 +449,15 @@ export default function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button 
-              className="w-full sm:w-auto px-8 py-4 bg-primary text-black border border-primary/20 font-display font-black text-sm rounded-xl transition-all duration-150 flex items-center justify-center gap-2 cursor-pointer shadow-md active:scale-95 hover:bg-emerald-600 hover:text-white"
-              onClick={() => triggerToast('📡 SECURING VAULT: The royal team is configuring the encrypted Gold Cat Telegram channel. Stand by!')}
+            <a 
+              href="https://t.me/goldcatonsol"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-8 py-4 bg-primary text-black border border-primary/20 font-display font-black text-sm rounded-xl transition-all duration-150 flex items-center justify-center gap-2 cursor-pointer shadow-md active:scale-95 hover:bg-emerald-600 hover:text-white text-center"
             >
               <TelegramIcon />
-              TELEGRAM CHANNEL (SOON)
-            </button>
+              JOIN TELEGRAM
+            </a>
           </div>
         </div>
       </section>
