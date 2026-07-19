@@ -1,6 +1,6 @@
 {
-  "name": "Alonbull",
-  "description": "The official Solana memecoin website for Alonbull ($alonbull) - Led by Alon, the legendary founder of pump.fun turned cosmic bull, leading the market to the ultimate peak!",
+  "name": "Gold Cat",
+  "description": "The official web portal for Gold Cat ($goldcat) - The viral cashcat upgraded to pure, high-value gold. More valuable than cash, charging straight through the Solana charts!",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

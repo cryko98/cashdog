@@ -34,8 +34,8 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
     },
     {
       num: '04',
-      title: 'Swap for $ALONBULL',
-      desc: 'Paste the official Contract Address into the swap panel, select the amount of SOL you want to swap, adjust slippage, and lock in! Charge forward!',
+      title: 'Swap for $goldcat',
+      desc: 'Paste the official Contract Address into the swap panel, select the amount of SOL you want to swap, adjust slippage, and lock in! Let\'s shine!',
       icon: <RefreshCw className="w-6 h-6 text-primary" />,
     }
   ];
@@ -47,7 +47,7 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
   };
 
   return (
-    <section id="how-to-buy" className="relative py-24 px-4 bg-bg-dark border-t border-slate-100 z-20 overflow-hidden">
+    <section id="how-to-buy" className="relative py-24 px-4 bg-bg-dark border-t border-border-dark z-20 overflow-hidden">
       {/* Decorative ambient visual background */}
       <div className="absolute top-1/2 left-0 w-80 h-80 bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
 
@@ -64,11 +64,11 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
             <span className="px-4 py-1.5 bg-primary/10 border border-primary/20 text-primary text-xs font-mono font-bold tracking-widest rounded-lg uppercase inline-block cyber-glow-gold">
               How To Acquire
             </span>
-            <h2 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-slate-900 tracking-tight uppercase">
-              🛒 How to Buy <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">$ALONBULL</span>
+            <h2 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-slate-100 tracking-tight uppercase">
+              🛒 How to Buy <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">$goldcat</span>
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-slate-600 text-sm sm:text-base">
-              Follow these simple steps to swap your SOL for $ALONBULL and join Alon's legendary bull run on Solana.
+            <p className="mt-4 max-w-2xl mx-auto text-slate-300 text-sm sm:text-base">
+              Follow these simple steps to swap your SOL for $goldcat and join the golden standard feline run on Solana.
             </p>
           </motion.div>
         </div>
@@ -87,16 +87,16 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
               <span className="inline-block text-[10px] font-mono font-bold uppercase tracking-widest px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary rounded-lg mb-2 text-glow-gold">
                 Official Smart Contract Address (Solana)
               </span>
-              <h3 className="text-lg sm:text-xl font-display font-black text-slate-900 mb-1 uppercase">
-                Copy $ALONBULL CA to swap safely
+              <h3 className="text-lg sm:text-xl font-display font-black text-slate-100 mb-1 uppercase">
+                Copy $goldcat CA to swap safely
               </h3>
-              <p className="text-xs text-slate-600 max-w-xl">
-                Always double check the CA before trading! Accept no lookalikes. There is only one genuine Alonbull contract backed by the bull.
+              <p className="text-xs text-slate-300 max-w-xl">
+                Always double check the CA before trading! Accept no lookalikes. There is only one genuine Gold Cat contract backed by the gilded treasury.
               </p>
             </div>
 
             <div className="w-full md:w-auto flex flex-col sm:flex-row items-center gap-3">
-              <div className="w-full sm:w-auto px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl font-mono text-xs sm:text-sm text-primary font-bold break-all select-all flex items-center justify-center min-h-[46px] shadow-inner">
+              <div className="w-full sm:w-auto px-4 py-3 bg-white/5 border border-primary/20 rounded-xl font-mono text-xs sm:text-sm text-primary font-bold break-all select-all flex items-center justify-center min-h-[46px]">
                 {contractAddress}
               </div>
               
@@ -146,20 +146,20 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
               className="p-6 rounded-2xl flex flex-col justify-between transition-all duration-200 relative group cyber-card cyber-card-hover"
             >
               {/* Number overlay */}
-              <div className="absolute top-4 right-4 text-4xl font-display font-black text-slate-100 select-none group-hover:text-primary/10 transition-colors duration-200">
+              <div className="absolute top-4 right-4 text-4xl font-display font-black text-slate-100/10 select-none group-hover:text-primary/20 transition-colors duration-200">
                 {step.num}
               </div>
 
               <div>
-                <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 w-fit mb-6">
+                <div className="p-3 bg-white/5 rounded-xl border border-primary/20 w-fit mb-6">
                   {step.icon}
                 </div>
                 
-                <h3 className="text-lg sm:text-xl font-display font-extrabold text-slate-900 mb-2 uppercase">
+                <h3 className="text-lg sm:text-xl font-display font-extrabold text-slate-100 mb-2 uppercase">
                   {step.title}
                 </h3>
                 
-                <p className="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed mb-6">
+                <p className="text-slate-300 font-sans text-xs sm:text-sm leading-relaxed mb-6">
                   {step.desc}
                 </p>
               </div>
@@ -176,8 +176,8 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               ) : (
-                <span className="text-xs font-mono text-slate-500 font-bold">
-                  Bull-Ready 🐂💚
+                <span className="text-xs font-mono text-slate-400 font-bold">
+                  Gold-Ready ✨🐱
                 </span>
               )}
             </motion.div>

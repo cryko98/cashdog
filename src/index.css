@@ -6,55 +6,55 @@
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  --color-primary: #24c07e; /* Pump.fun signature green */
-  --color-secondary: #10b981; /* High-Candle Green */
-  --color-accent: #1e293b; /* Cyber steel accent */
-  --color-bg-dark: #f8fafc; /* Bright clean background */
-  --color-bg-card: #ffffff; /* Crisp white cards */
-  --color-border-dark: #e2e8f0; /* Soft border */
+  --color-primary: #d4af37; /* Gilded Metallic Gold */
+  --color-secondary: #f3c63f; /* Radiant Sun Gold */
+  --color-accent: #aa7c11; /* Deep Bronze Gold */
+  --color-bg-dark: #070605; /* Deep Luxurious Gold-tinted Black */
+  --color-bg-card: #13110d; /* Gilded Card Charcoal-Black */
+  --color-border-dark: #2c2414; /* Metallic Gold-Copper Border */
 }
 
 @layer utilities {
-  /* Futuristic neon glow shadows */
+  /* Futuristic gold glow shadows */
   .cyber-glow-gold {
-    box-shadow: 0 4px 20px rgba(36, 192, 126, 0.08);
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.15);
   }
   .cyber-glow-green {
-    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.12);
+    box-shadow: 0 4px 20px rgba(243, 198, 63, 0.2);
   }
   .cyber-glow-accent {
-    box-shadow: 0 4px 20px rgba(30, 41, 59, 0.05);
+    box-shadow: 0 4px 20px rgba(170, 124, 17, 0.15);
   }
   
   /* Glowing text effects */
   .text-glow-gold {
-    text-shadow: 0 0 12px rgba(36, 192, 126, 0.3);
+    text-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
   }
   .text-glow-green {
-    text-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+    text-shadow: 0 0 12px rgba(243, 198, 63, 0.5);
   }
   .text-glow-accent {
-    text-shadow: 0 0 12px rgba(30, 41, 59, 0.2);
+    text-shadow: 0 0 12px rgba(170, 124, 17, 0.4);
   }
 
   /* Sleek cyber glassmorphism card */
   .cyber-card {
-    background: #ffffff;
-    border: 1px solid rgba(36, 192, 126, 0.15);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02);
+    background: #13110d;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
   }
   .cyber-card-hover {
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .cyber-card-hover:hover {
     transform: translateY(-4px);
-    border-color: rgba(36, 192, 126, 0.4);
-    box-shadow: 0 12px 30px rgba(36, 192, 126, 0.1);
+    border-color: rgba(212, 175, 55, 0.5);
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.2);
   }
 
   /* Neon border scanlines */
   .cyber-border-gradient {
-    border-image: linear-gradient(to right, #24c07e, #10b981) 1;
+    border-image: linear-gradient(to right, #d4af37, #f3c63f) 1;
   }
 }
 
@@ -67,13 +67,13 @@ html {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f8fafc;
+  background: #070605;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #2c2414;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #24c07e;
+  background: #d4af37;
 }
 

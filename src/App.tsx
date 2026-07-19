@@ -50,20 +50,20 @@ export default function App() {
 
   const faqs = [
     {
-      q: 'What is Alonbull ($alonbull)?',
-      a: 'Alonbull is the supreme, golden bull mascot of the ultimate Solana bull market. Inspired by Alon, the legendary genius architect and founder of pump.fun, Alonbull is here to charge beyond the bonding curve and lead the entire world of crypto to the absolute peak.'
+      q: 'What is Gold Cat ($goldcat)?',
+      a: 'Gold Cat is the supreme, gilded feline mascot of wealth on Solana. Inspired by the legendary and viral cashcat, this gold version is well-known to be much more valuable than simple cash, and is here to turn Solana trading into an empire of real gilded fortune.'
     },
     {
-      q: 'Who is Alon in this story?',
-      a: 'Alon is the iconic creator of pump.fun who built the very trenches we trade in. In this legend, he has transformed into a golden celestial bull, carrying the entire bull market on his back and driving green candles to the top.'
+      q: 'What is the story of Gold Cat?',
+      a: 'Solana\'s most viral feline has evolved! Cash is just paper, and paper burns. Under the cosmic rays of Solana\'s high-speed blockchain, Cash Cat went through a complete physical transmutation—emerging as pure, solid Gold Cat. In a world of paper fiat, Gold Cat reigns supreme.'
     },
     {
       q: 'Is there any tax or team allocation?',
-      a: 'Absolutely not. In accordance with Alon\'s pure launch standards, there are 0% buy/sell taxes, 100% of the token supply is on the bonding curve, and the contract is immutable with the mint authority permanently revoked.'
+      a: 'Absolutely not. In accordance with pure decentralized standards, there are 0% buy/sell taxes, 100% of the token supply is on the bonding curve, and the contract is immutable with the mint authority permanently revoked.'
     },
     {
-      q: 'How do I join the Alonbull community?',
-      a: 'The Telegram channel is being fully encrypted and secured by Alon\'s tech team. You can check back very soon! Keep your eyes on this terminal for updates.'
+      q: 'How do I join the Gold Cat community?',
+      a: 'The Telegram channel is being fully encrypted and secured by our elite engineering team. You can check back very soon! Keep your eyes on this terminal for updates.'
     }
   ];
 
@@ -80,7 +80,7 @@ export default function App() {
       <FallingCash />
 
       {/* Futuristic Grid Overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(36,192,126,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(36,192,126,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none z-0" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(212,175,55,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(212,175,55,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none z-0" />
 
       {/* Header / Navigation */}
       <nav className="sticky top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-4 py-4">
@@ -90,21 +90,21 @@ export default function App() {
           <a href="#" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-lg border border-primary/20 overflow-hidden shadow-sm group-hover:scale-105 transition-transform cyber-glow-gold bg-white">
               <img 
-                src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/alonbulllogo.png?v=1784202113" 
-                alt="Alonbull" 
+                src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/goldcat.jpg?v=1784478811" 
+                alt="Gold Cat Logo" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
             </div>
             <span className="font-display font-extrabold text-slate-900 text-lg tracking-tight group-hover:text-primary transition-colors uppercase">
-              ALONBULL <span className="text-primary text-xs font-mono font-bold ml-1">$alonbull</span>
+              GOLD CAT <span className="text-primary text-xs font-mono font-bold ml-1">$goldcat</span>
             </span>
           </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8 text-xs font-mono font-bold text-slate-500">
             <a href="#story" className="hover:text-primary transition-colors">The Legend</a>
-            <a href="#tokenomics" className="hover:text-primary transition-colors">Bullnomics</a>
+            <a href="#tokenomics" className="hover:text-primary transition-colors">Goldnomics</a>
             <a href="#calculator" className="hover:text-primary transition-colors">Curve Impact</a>
             <a href="#how-to-buy" className="hover:text-primary transition-colors">How to Buy</a>
           </div>
@@ -113,7 +113,7 @@ export default function App() {
           <div className="hidden md:flex items-center gap-4">
             <button 
               className="px-4 py-2 bg-slate-50 border border-slate-200 hover:border-primary/45 hover:bg-slate-100 text-slate-700 rounded-lg transition-all duration-150 flex items-center gap-2 cursor-pointer text-xs font-mono font-bold"
-              onClick={() => triggerToast('📡 ENCRYPTED LINK: Alon\'s team is securing the Telegram channel. Opening soon!')}
+              onClick={() => triggerToast('📡 SECURING VAULT: The royal team is configuring the encrypted Gold Cat Telegram channel. Stand by!')}
             >
               <TelegramIcon />
               TELEGRAM (SOON)
@@ -123,7 +123,7 @@ export default function App() {
               href="#how-to-buy"
               className="px-4 py-2 bg-primary text-black font-display font-black text-xs border border-primary/40 rounded-lg transition-all duration-150 hover:bg-emerald-600 hover:text-white shadow-md"
             >
-              BUY $ALONBULL
+              BUY $goldcat
             </a>
           </div>
 
@@ -157,7 +157,7 @@ export default function App() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-slate-600 hover:text-primary py-1 font-bold"
               >
-                Bullnomics
+                Goldnomics
               </a>
               <a 
                 href="#calculator" 
@@ -179,7 +179,7 @@ export default function App() {
                   className="w-full justify-center px-4 py-2.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg flex items-center gap-2 text-xs font-mono font-bold"
                   onClick={() => {
                     setMobileMenuOpen(false);
-                    triggerToast('📡 ENCRYPTED LINK: Alon\'s team is securing the Telegram channel. Opening soon!');
+                    triggerToast('📡 SECURING VAULT: The royal team is configuring the encrypted Gold Cat Telegram channel. Stand by!');
                   }}
                 >
                   <TelegramIcon />
@@ -190,7 +190,7 @@ export default function App() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="w-full justify-center px-4 py-2.5 bg-primary hover:bg-emerald-600 text-black font-display font-black text-xs border border-primary/20 rounded-lg text-center"
                 >
-                  BUY $ALONBULL
+                  BUY $goldcat
                 </a>
               </div>
             </motion.div>
@@ -200,140 +200,151 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="relative pt-12 pb-24 px-4 overflow-hidden z-20">
-        <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
+        <div className="max-w-6xl mx-auto">
           
-          {/* Top Pill badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 border border-primary/20 text-primary font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded-lg mb-8"
-          >
-            <ShieldCheck className="w-4 h-4 text-primary" />
-            <span>ORIGINAL PUMP.FUN ARCHITECT STRENGTH</span>
-          </motion.div>
-
-          {/* Master Logo Token Showcase */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, type: 'spring', damping: 15 }}
-            className="relative w-44 h-44 sm:w-52 sm:h-52 md:w-60 md:h-60 rounded-full border border-primary/25 p-2 bg-gradient-to-br from-primary/10 via-white to-secondary/10 mb-8"
-            style={{ boxShadow: '0 8px 40px rgba(36, 192, 126, 0.12)' }}
-          >
-            <div className="w-full h-full rounded-full overflow-hidden border border-primary/15 bg-white">
-              <img 
-                src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/alonbulllogo.png?v=1784202113" 
-                alt="Alonbull Logo" 
-                className="w-full h-full object-cover select-none pointer-events-none scale-105 hover:scale-110 transition-transform duration-500"
-                referrerPolicy="no-referrer"
-              />
-            </div>
+          {/* Main Dual-Column Hero Layout */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-12 w-full text-center md:text-left">
             
-            {/* Decorative orbit circles */}
-            <div className="absolute -inset-4 border border-dashed border-primary/20 rounded-full animate-[spin_35s_linear_infinite] pointer-events-none" />
-            <div className="absolute -inset-8 border border-dashed border-secondary/15 rounded-full animate-[spin_55s_linear_infinite_reverse] pointer-events-none" />
-          </motion.div>
+            {/* Left Column: Brand Details, Story, CTAs, CA Copy */}
+            <div className="flex-1 flex flex-col items-center md:items-start">
+              {/* Top Pill badge */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 border border-primary/20 text-primary font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded-lg mb-6"
+              >
+                <ShieldCheck className="w-4 h-4 text-primary" />
+                <span>THE SUPREME FEline GOld STANDARD</span>
+              </motion.div>
 
-          {/* Title and Slogan */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="max-w-4xl"
-          >
-            <h1 className="text-5xl sm:text-7xl md:text-8xl font-display font-black text-slate-900 tracking-tight leading-none uppercase select-none">
-              ALONBULL
-            </h1>
-            
-            <div className="text-2xl sm:text-3xl md:text-4xl font-display font-black text-primary uppercase mt-2 tracking-wide text-glow-gold">
-              $alonbull
+              {/* Title and Ticker */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="space-y-2"
+              >
+                <h1 className="text-5xl sm:text-7xl md:text-8xl font-display font-black text-slate-900 tracking-tight leading-none uppercase select-none">
+                  GOLD CAT
+                </h1>
+                
+                <div className="text-2xl sm:text-3xl md:text-4xl font-display font-black text-primary uppercase tracking-wide text-glow-gold">
+                  $goldcat
+                </div>
+
+                <p className="mt-6 max-w-xl text-slate-600 font-sans text-sm sm:text-base leading-relaxed">
+                  The viral cashcat has evolved. Paper money burns, but solid 24k gold is indestructible. Gold Cat ($goldcat) is here to reign over Solana, turning your standard paper gains into pure, immutable gold.
+                </p>
+              </motion.div>
+
+              {/* Main Action CTAs */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="mt-8 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
+              >
+                <a 
+                  href="#how-to-buy"
+                  className="w-full sm:w-auto px-8 py-4 bg-primary text-black font-display font-black text-sm tracking-wider border border-primary/20 rounded-xl hover:bg-emerald-600 hover:text-white hover:translate-y-[-2px] transition-all duration-200 uppercase text-center cursor-pointer shadow-md"
+                >
+                  BUY $goldcat 👑
+                </a>
+
+                <button 
+                  className="w-full sm:w-auto px-8 py-4 bg-white border border-slate-200 hover:border-primary/40 hover:bg-slate-50 text-slate-700 font-mono font-bold text-sm rounded-xl transition-all duration-200 flex items-center justify-center gap-3 cursor-pointer shadow-sm"
+                  onClick={() => triggerToast('📡 SECURING VAULT: The royal team is configuring the encrypted Gold Cat Telegram channel. Stand by!')}
+                >
+                  <TelegramIcon />
+                  JOIN TELEGRAM (SOON)
+                </button>
+              </motion.div>
+
+              {/* Quick Contract Copy Bar */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="mt-8 w-full max-w-xl p-4 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 cyber-card"
+              >
+                <div className="text-center sm:text-left">
+                  <span className="block text-[9px] font-mono text-slate-500 uppercase font-bold tracking-widest">SOLANA CONTRACT ADDRESS</span>
+                  <span className="font-mono text-xs text-primary font-bold break-all text-glow-gold">{CONTRACT_ADDRESS}</span>
+                </div>
+
+                <button
+                  onClick={handleCopy}
+                  className="px-4 py-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-xl text-xs font-mono font-bold text-slate-700 flex items-center gap-2 shrink-0 cursor-pointer active:scale-95 transition-all"
+                >
+                  {copied ? (
+                    <>
+                      <Check className="w-3.5 h-3.5 text-secondary" />
+                      <span>COPIED!</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-3.5 h-3.5 text-primary" />
+                      <span>COPY CA</span>
+                    </>
+                  )}
+                </button>
+              </motion.div>
             </div>
 
-            <p className="mt-6 max-w-xl mx-auto text-slate-600 font-sans text-sm sm:text-base leading-relaxed">
-              While other coins seek direction, Alon—the legendary founder of pump.fun—has transformed into a glorious cosmic bull. He is charging straight through the charts, pushing the market to its absolute golden peak.
-            </p>
-          </motion.div>
-
-          {/* Main Action CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-10 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
-          >
-            <a 
-              href="#how-to-buy"
-              className="w-full sm:w-auto px-8 py-4 bg-primary text-black font-display font-black text-sm tracking-wider border border-primary/20 rounded-xl hover:bg-emerald-600 hover:text-white hover:translate-y-[-2px] transition-all duration-200 uppercase text-center cursor-pointer shadow-md"
-            >
-              BUY $ALONBULL 🐂
-            </a>
-
-            <button 
-              className="w-full sm:w-auto px-8 py-4 bg-white border border-slate-200 hover:border-primary/40 hover:bg-slate-50 text-slate-700 font-mono font-bold text-sm rounded-xl transition-all duration-200 flex items-center justify-center gap-3 cursor-pointer shadow-sm"
-              onClick={() => triggerToast('📡 ENCRYPTED LINK: Alon\'s team is securing the Telegram channel. Opening soon!')}
-            >
-              <TelegramIcon />
-              JOIN TELEGRAM (SOON)
-            </button>
-          </motion.div>
-
-          {/* Quick Contract Copy Bar */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-12 w-full max-w-xl p-4 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 cyber-card"
-          >
-            <div className="text-center sm:text-left">
-              <span className="block text-[9px] font-mono text-slate-500 uppercase font-bold tracking-widest">SOLANA CONTRACT ADDRESS</span>
-              <span className="font-mono text-xs text-primary font-bold break-all text-glow-gold">{CONTRACT_ADDRESS}</span>
+            {/* Right Column: Master Logo Token Showcase */}
+            <div className="flex-1 flex justify-center items-center">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, type: 'spring', damping: 15 }}
+                className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full border border-primary/25 p-3 bg-gradient-to-br from-primary/15 via-white to-secondary/15"
+                style={{ boxShadow: '0 12px 50px rgba(212, 175, 55, 0.25)' }}
+              >
+                <div className="w-full h-full rounded-full overflow-hidden border border-primary/20 bg-white shadow-inner">
+                  <img 
+                    src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/goldcat.jpg?v=1784478811" 
+                    alt="Gold Cat Master Logo" 
+                    className="w-full h-full object-cover select-none pointer-events-none scale-105 hover:scale-110 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                
+                {/* Luxurious decorative orbit circles */}
+                <div className="absolute -inset-4 border border-dashed border-primary/30 rounded-full animate-[spin_35s_linear_infinite] pointer-events-none" />
+                <div className="absolute -inset-8 border border-dashed border-secondary/20 rounded-full animate-[spin_55s_linear_infinite_reverse] pointer-events-none" />
+                <div className="absolute -inset-12 border border-dotted border-primary/10 rounded-full animate-[spin_80s_linear_infinite] pointer-events-none" />
+              </motion.div>
             </div>
 
-            <button
-              onClick={handleCopy}
-              className="px-4 py-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-xl text-xs font-mono font-bold text-slate-700 flex items-center gap-2 shrink-0 cursor-pointer active:scale-95 transition-all"
-            >
-              {copied ? (
-                <>
-                  <Check className="w-3.5 h-3.5 text-secondary" />
-                  <span>COPIED!</span>
-                </>
-              ) : (
-                <>
-                  <Copy className="w-3.5 h-3.5 text-primary" />
-                  <span>COPY CA</span>
-                </>
-              )}
-            </button>
-          </motion.div>
+          </div>
 
-          {/* Interactive Badges Grid */}
+          {/* Interactive Badges Grid (Full width below the columns) */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-4xl"
+            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 w-full"
           >
             <div className="p-4 rounded-xl text-center cyber-card cyber-card-hover">
               <span className="text-2xl block mb-1">🔥</span>
-              <span className="font-mono text-xs text-slate-500 block uppercase font-bold">LP STATUS</span>
-              <span className="font-display font-extrabold text-slate-900 text-sm text-glow-gold">100% BURNT</span>
+              <span className="font-mono text-xs text-slate-400 block uppercase font-bold">LP STATUS</span>
+              <span className="font-display font-extrabold text-slate-100 text-sm text-glow-gold">100% BURNT</span>
             </div>
             <div className="p-4 rounded-xl text-center cyber-card cyber-card-hover">
               <span className="text-2xl block mb-1">⚡</span>
-              <span className="font-mono text-xs text-slate-500 block uppercase font-bold">TAX RATE</span>
-              <span className="font-display font-extrabold text-slate-900 text-sm text-glow-gold">0% FOREVER</span>
+              <span className="font-mono text-xs text-slate-400 block uppercase font-bold">TAX RATE</span>
+              <span className="font-display font-extrabold text-slate-100 text-sm text-glow-gold">0% FOREVER</span>
             </div>
             <div className="p-4 rounded-xl text-center cyber-card cyber-card-hover">
               <span className="text-2xl block mb-1">🛡️</span>
-              <span className="font-mono text-xs text-slate-500 block uppercase font-bold">MINT AUTHORITY</span>
-              <span className="font-display font-extrabold text-slate-900 text-sm text-glow-gold">REVOKED</span>
+              <span className="font-mono text-xs text-slate-400 block uppercase font-bold">MINT AUTHORITY</span>
+              <span className="font-display font-extrabold text-slate-100 text-sm text-glow-gold">REVOKED</span>
             </div>
             <div className="p-4 rounded-xl text-center cyber-card cyber-card-hover">
-              <span className="text-2xl block mb-1">👥</span>
-              <span className="font-mono text-xs text-slate-500 block uppercase font-bold">OWNERSHIP</span>
-              <span className="font-display font-extrabold text-slate-900 text-sm text-glow-gold">100% COMMUNITY</span>
+              <span className="text-2xl block mb-1">👑</span>
+              <span className="font-mono text-xs text-slate-400 block uppercase font-bold">TREASURY</span>
+              <span className="font-display font-extrabold text-slate-100 text-sm text-glow-gold">100% IMMUTABLE</span>
             </div>
           </motion.div>
 
@@ -361,15 +372,15 @@ export default function App() {
       <HowToBuy contractAddress={CONTRACT_ADDRESS} />
 
       {/* Frequently Asked Questions */}
-      <section className="relative py-24 px-4 bg-bg-dark border-t border-slate-100 z-20 overflow-hidden">
+      <section className="relative py-24 px-4 bg-bg-dark border-t border-border-dark z-20 overflow-hidden">
         <div className="max-w-4xl mx-auto">
           
           <div className="text-center mb-16">
-            <span className="px-4 py-1.5 bg-secondary/10 border border-secondary/30 text-secondary text-xs font-mono font-bold tracking-widest rounded-lg uppercase inline-block cyber-glow-green">
-              Bovine Knowledge
+            <span className="px-4 py-1.5 bg-secondary/10 border border-secondary/30 text-secondary text-xs font-mono font-bold tracking-widest rounded-lg uppercase inline-block cyber-glow-gold">
+              Feline Knowledge
             </span>
-            <h2 className="mt-6 text-4xl sm:text-5xl font-display font-black text-slate-900 tracking-tight uppercase">
-              🐂 FAQ & <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">ANSWERS</span>
+            <h2 className="mt-6 text-4xl sm:text-5xl font-display font-black text-slate-100 tracking-tight uppercase">
+              🐱 FAQ & <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">ANSWERS</span>
             </h2>
           </div>
 
@@ -383,10 +394,10 @@ export default function App() {
                 >
                   <button
                     onClick={() => setOpenFaq(isOpen ? null : idx)}
-                    className="w-full px-6 py-5 flex items-center justify-between text-left font-display font-bold text-slate-900 sm:text-lg focus:outline-none cursor-pointer group"
+                    className="w-full px-6 py-5 flex items-center justify-between text-left font-display font-bold text-slate-100 sm:text-lg focus:outline-none cursor-pointer group"
                   >
                     <span className="group-hover:text-primary transition-colors">{faq.q}</span>
-                    <ChevronDown className={`w-5 h-5 text-slate-500 shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180 text-primary' : ''}`} />
+                    <ChevronDown className={`w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180 text-primary' : ''}`} />
                   </button>
 
                   <AnimatePresence initial={false}>
@@ -397,7 +408,7 @@ export default function App() {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.2 }}
                       >
-                        <div className="px-6 pb-5 pt-1 text-sm sm:text-base text-slate-600 font-sans leading-relaxed border-t border-slate-100">
+                        <div className="px-6 pb-5 pt-1 text-sm sm:text-base text-slate-300 font-sans leading-relaxed border-t border-border-dark">
                           {faq.a}
                         </div>
                       </motion.div>
@@ -412,31 +423,31 @@ export default function App() {
       </section>
 
       {/* CTA Footer Join Section */}
-      <section className="relative py-24 px-4 bg-bg-dark border-t border-slate-100 text-center z-20 overflow-hidden">
+      <section className="relative py-24 px-4 bg-bg-dark border-t border-border-dark text-center z-20 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-80 bg-primary/5 blur-[100px] rounded-full pointer-events-none" />
         
         <div className="max-w-2xl mx-auto relative z-10 space-y-8">
           <div className="w-20 h-20 rounded-xl overflow-hidden border border-primary/20 mx-auto shadow-md bg-white">
             <img 
-              src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/alonbulllogo.png?v=1784202113" 
-              alt="Alonbull Badge"
+              src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/goldcat.jpg?v=1784478811" 
+              alt="Gold Cat Badge"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
           </div>
 
-          <h2 className="text-4xl sm:text-5xl font-display font-black text-slate-900 leading-none uppercase">
-            JOIN THE HERD TODAY
+          <h2 className="text-4xl sm:text-5xl font-display font-black text-slate-100 leading-none uppercase">
+            ENTER THE VAULT TODAY
           </h2>
           
-          <p className="text-slate-600 font-sans text-sm sm:text-base leading-relaxed">
-            Don't sit on the sidelines while Alonbull charges the chart. Connect your wallet, monitor the live ticker, spread the bull market spirit, and trade like an elite member of the herd.
+          <p className="text-slate-300 font-sans text-sm sm:text-base leading-relaxed">
+            Don't sit on the sidelines while Gold Cat turns paper into solid gold. Stash your wealth, monitor the live ticker, spread the golden standard, and trade like an elite member of the treasury.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button 
               className="w-full sm:w-auto px-8 py-4 bg-primary text-black border border-primary/20 font-display font-black text-sm rounded-xl transition-all duration-150 flex items-center justify-center gap-2 cursor-pointer shadow-md active:scale-95 hover:bg-emerald-600 hover:text-white"
-              onClick={() => triggerToast('📡 ENCRYPTED LINK: Alon\'s team is securing the Telegram channel. Opening soon!')}
+              onClick={() => triggerToast('📡 SECURING VAULT: The royal team is configuring the encrypted Gold Cat Telegram channel. Stand by!')}
             >
               <TelegramIcon />
               TELEGRAM CHANNEL (SOON)
@@ -452,23 +463,23 @@ export default function App() {
           <div className="flex items-center justify-center gap-2 font-display font-black text-white uppercase text-sm tracking-wide">
             <div className="w-7 h-7 rounded-lg overflow-hidden border border-primary/20 bg-white">
               <img 
-                src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/alonbulllogo.png?v=1784202113" 
-                alt="Alonbull Mini Logo"
+                src="https://cdn.shopify.com/s/files/1/0967/8087/8151/files/goldcat.jpg?v=1784478811" 
+                alt="Gold Cat Mini Logo"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
             </div>
-            <span>ALONBULL $alonbull</span>
+            <span>GOLD CAT $goldcat</span>
           </div>
 
           <p className="leading-relaxed max-w-2xl mx-auto font-sans text-[11px] text-slate-300">
             <Info className="w-4 h-4 text-primary inline-block mr-1.5 align-text-bottom" />
-            <strong>Disclaimer:</strong> $alonbull is a tribute meme token with absolutely no intrinsic utility, financial guarantees, or promises of investment returns. It is born straight out of meme culture on Solana and is not affiliated directly with any financial regulatory authorities. Markets are highly volatile; trade responsibly at your own risk.
+            <strong>Disclaimer:</strong> $goldcat is a tribute meme token with absolutely no intrinsic utility, financial guarantees, or promises of investment returns. It is born straight out of meme culture on Solana and is not affiliated directly with any financial regulatory authorities. Markets are highly volatile; trade responsibly at your own risk.
           </p>
 
           <div className="pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] font-bold text-slate-500">
-            <span>© 2026 ALONBULL. ALL RIGHTS RESERVED.</span>
-            <span>POWERED BY PUMP.FUN BULL HARVESTERS</span>
+            <span>© 2026 GOLD CAT. ALL RIGHTS RESERVED.</span>
+            <span>POWERED BY PUMP.FUN GOLD VAULTERS</span>
           </div>
 
         </div>
@@ -481,7 +492,7 @@ export default function App() {
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
-            className="fixed bottom-6 right-6 z-50 p-4 max-w-sm rounded-xl bg-white border border-primary text-slate-900 shadow-[0_8px_30px_rgba(36,192,126,0.15)] flex items-start gap-3"
+            className="fixed bottom-6 right-6 z-50 p-4 max-w-sm rounded-xl bg-white border border-primary text-slate-900 shadow-[0_8px_30px_rgba(212,175,55,0.15)] flex items-start gap-3"
           >
             <div className="p-1.5 bg-primary/10 rounded-lg border border-primary/20 shrink-0 text-primary">
               <Cpu className="w-4 h-4 animate-pulse" />

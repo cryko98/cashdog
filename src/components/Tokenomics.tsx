@@ -6,7 +6,7 @@ export default function Tokenomics() {
     {
       label: 'Buy / Sell Tax',
       value: '0%',
-      desc: 'No taxes. No friction. Pure bull action.',
+      desc: 'No taxes. No friction. Pure feline gold.',
       icon: <Percent className="w-6 h-6 text-primary" />,
     },
     {
@@ -18,19 +18,19 @@ export default function Tokenomics() {
     {
       label: 'Mint Authority',
       value: 'REVOKED 🚫',
-      desc: 'Mint authority revoked. Immutable and 100% rug-proof.',
+      desc: 'Mint authority revoked. Immutable and 100% secure.',
       icon: <Key className="w-6 h-6 text-primary" />,
     },
     {
       label: 'Security Audit',
       value: '100% SAFU',
-      desc: 'Zero backdoor. Elite pump.fun original code.',
+      desc: 'Zero backdoor. Elite original code, secure gold vault.',
       icon: <ShieldCheck className="w-6 h-6 text-primary" />,
     }
   ];
 
   return (
-    <section id="tokenomics" className="relative py-24 px-4 bg-bg-dark border-t border-slate-100 z-20 overflow-hidden">
+    <section id="tokenomics" className="relative py-24 px-4 bg-bg-dark border-t border-border-dark z-20 overflow-hidden">
       {/* Decorative absolute background spots */}
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 blur-[150px] rounded-full pointer-events-none" />
       <div className="absolute top-0 left-0 w-96 h-96 bg-secondary/5 blur-[150px] rounded-full pointer-events-none" />
@@ -46,11 +46,11 @@ export default function Tokenomics() {
             <span className="px-4 py-1.5 bg-secondary/10 border border-secondary/30 text-secondary text-xs font-mono font-bold tracking-widest rounded-lg uppercase inline-block cyber-glow-green">
               The Math
             </span>
-            <h2 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-slate-900 tracking-tight uppercase">
-              🐂 <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">BULLNOMICS</span>
+            <h2 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-slate-100 tracking-tight uppercase">
+              👑 <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">GOLDNOMICS</span>
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-slate-600 text-sm sm:text-base font-sans">
-              Fair, transparent, and born on the bonding curve. No VC allocations, no team wallets, no hidden unlocks. Just raw community strength.
+            <p className="mt-4 max-w-2xl mx-auto text-slate-300 text-sm sm:text-base font-sans">
+              Fair, transparent, and born on the bonding curve. No VC allocations, no team wallets, no hidden unlocks. Just raw community gold.
             </p>
           </motion.div>
         </div>
@@ -70,17 +70,17 @@ export default function Tokenomics() {
                 className="p-6 rounded-2xl cyber-card cyber-card-hover"
               >
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="p-3 bg-slate-50 rounded-xl border border-slate-150">
+                  <div className="p-3 bg-white/5 rounded-xl border border-primary/20">
                     {stat.icon}
                   </div>
-                  <h4 className="text-xs font-mono font-bold tracking-wider text-slate-500 uppercase">
+                  <h4 className="text-xs font-mono font-bold tracking-wider text-slate-400 uppercase">
                     {stat.label}
                   </h4>
                 </div>
-                <div className="text-2xl sm:text-3xl font-display font-black text-slate-900 mb-2 uppercase text-glow-gold">
+                <div className="text-2xl sm:text-3xl font-display font-black text-slate-100 mb-2 uppercase text-glow-gold">
                   {stat.value}
                 </div>
-                <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                <p className="text-sm text-slate-300 font-sans leading-relaxed">
                   {stat.desc}
                 </p>
               </motion.div>
@@ -102,13 +102,13 @@ export default function Tokenomics() {
             <div className="relative z-10">
               <div className="flex items-center gap-2 text-primary font-mono text-xs font-bold uppercase tracking-widest mb-6">
                 <Coins className="w-4 h-4 text-primary" />
-                <span className="text-slate-500">Token Supply Allocation</span>
+                <span className="text-slate-400">Token Supply Allocation</span>
               </div>
               
-              <h3 className="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 mb-2 uppercase leading-tight">
+              <h3 className="text-3xl sm:text-4xl font-display font-extrabold text-slate-100 mb-2 uppercase leading-tight">
                 100% Community Owned
               </h3>
-              <p className="text-slate-600 font-sans text-sm mb-6 leading-relaxed">
+              <p className="text-slate-300 font-sans text-sm mb-6 leading-relaxed">
                 No dev shares. No premium allocation. Every single token is deployed straight into the bonding curve for fair, open purchase on pump.fun.
               </p>
             </div>
@@ -116,29 +116,29 @@ export default function Tokenomics() {
             <div className="relative z-10">
               <div className="space-y-4">
                 <div>
-                  <div className="flex justify-between text-xs font-mono font-bold text-slate-500 mb-2 uppercase">
+                  <div className="flex justify-between text-xs font-mono font-bold text-slate-400 mb-2 uppercase">
                     <span>Liquidity & Bonding Curve</span>
                     <span className="text-secondary font-bold">100%</span>
                   </div>
-                  <div className="w-full bg-slate-100 h-3 rounded-full overflow-hidden border border-slate-200">
+                  <div className="w-full bg-white/10 h-3 rounded-full overflow-hidden border border-white/5">
                     <div className="bg-gradient-to-r from-primary to-secondary h-full w-full rounded-full" />
                   </div>
                 </div>
 
                 <div className="pt-2">
-                  <div className="flex justify-between text-xs font-mono font-bold text-slate-500 mb-2 uppercase">
+                  <div className="flex justify-between text-xs font-mono font-bold text-slate-400 mb-2 uppercase">
                     <span>Developer Allocation</span>
-                    <span className="text-slate-400 font-bold">0%</span>
+                    <span className="text-slate-500 font-bold">0%</span>
                   </div>
-                  <div className="w-full bg-slate-100 h-3 rounded-full overflow-hidden border border-slate-200">
+                  <div className="w-full bg-white/10 h-3 rounded-full overflow-hidden border border-white/5">
                     <div className="bg-red-500 h-full w-0 rounded-full" />
                   </div>
                 </div>
               </div>
 
-              <div className="mt-8 pt-4 border-t border-slate-100 text-center">
+              <div className="mt-8 pt-4 border-t border-border-dark text-center">
                 <span className="text-xs font-mono font-bold text-primary uppercase tracking-widest bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-lg inline-block text-glow-gold">
-                  TOTAL SUPPLY: 1,000,000,000 $ALONBULL
+                  TOTAL SUPPLY: 1,000,000,000 $goldcat
                 </span>
               </div>
             </div>
