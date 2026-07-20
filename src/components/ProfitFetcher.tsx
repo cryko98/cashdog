@@ -5,9 +5,9 @@ import { Sparkles, Coins, HelpCircle } from 'lucide-react';
 export default function ProfitFetcher() {
   const [solAmount, setSolAmount] = useState(5);
   
-  // Swap rate: 1 SOL = 50,000,000 $goldcat
+  // Swap rate: 1 SOL = 50,000,000 $mathcat
   const RATE = 50000000;
-  const goldcatAmount = solAmount * RATE;
+  const mathcatAmount = solAmount * RATE;
 
   // Base bonding curve progress: let's start at 84.6%
   const baseProgress = 84.6;
@@ -18,29 +18,29 @@ export default function ProfitFetcher() {
   const getTierDetails = (amount: number) => {
     if (amount < 2) {
       return {
-        title: 'Paper Jeet 🧻',
-        desc: "You are holding a tiny fraction of gold. Careful not to drop your gold coin, little kitten!",
+        title: 'Math Rookie 🧮',
+        desc: "You are holding a small fraction of the equation. Keep solving, little kitten, you're just learning addition!",
         color: 'text-red-400 font-bold',
         bg: 'border-red-500/20 bg-red-500/5',
       };
     } else if (amount < 10) {
       return {
-        title: 'Gilded Believer ✨',
-        desc: 'Steady and solid. You believe in feline gold and are actively stacking 24k bars!',
+        title: 'Calculus Cat 📐',
+        desc: 'Your equations are solid. You understand derivatives and are actively integration-stacking $mathcat!',
         color: 'text-emerald-400 font-bold',
         bg: 'border-emerald-500/20 bg-emerald-500/5',
       };
     } else if (amount < 30) {
       return {
-        title: 'Royal Vault Graduate 👑🔥',
-        desc: 'A powerful force! You are the absolute pillar of our golden treasury, prepping to catapult $goldcat into millions.',
+        title: 'Quantum Professor 🎓🔬',
+        desc: 'A legendary intellectual! Your mathematical algorithms are pushing the bonding curve past the speed of light.',
         color: 'text-primary font-black',
         bg: 'border-primary/25 bg-primary/5',
       };
     } else {
       return {
-        title: '🐳 SUPREME GIGA GOLDEN WHALE 🔱👑',
-        desc: 'The ultimate monarch. Your paws are made of solid diamonds and gold. You do not just ride the curve—you ARE the treasury!',
+        title: '🐳 EINSTEIN GIGA MATHCAT 🧠🌀',
+        desc: "The ultimate mathematician. You didn't just solve the equation—you invented the entire universe's coordinate system! Paws of absolute genius.",
         color: 'text-secondary font-black',
         bg: 'border-secondary/25 bg-secondary/5',
       };
@@ -79,19 +79,19 @@ export default function ProfitFetcher() {
                 </div>
 
                 <h3 className="text-3xl sm:text-4xl font-display font-black text-slate-100 leading-none uppercase mt-6">
-                  CHOOSE YOUR <br />
-                  <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">GOLD WEIGHT</span>
+                  CALCULATE YOUR <br />
+                  <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">BRAIN POWER</span>
                 </h3>
 
                 <p className="text-slate-300 font-sans text-sm leading-relaxed mt-4">
-                  Enter your intended SOL purchase size to see how many millions of $goldcat you can claim and see your live impact on the bonding curve.
+                  Enter your intended SOL purchase size to see how many millions of $mathcat you can claim and calculate your live impact on the bonding curve.
                 </p>
               </div>
 
               {/* Slider Input */}
               <div className="space-y-4 pt-4">
                 <div className="flex justify-between items-center text-sm font-mono">
-                  <span className="text-slate-400 font-bold">YOUR BUY SIZE:</span>
+                  <span className="text-slate-400 font-bold">YOUR INVESTED SOL:</span>
                   <span className="text-primary font-black text-lg bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-md text-glow-gold">{solAmount} SOL</span>
                 </div>
 
@@ -107,8 +107,8 @@ export default function ProfitFetcher() {
 
                 <div className="flex justify-between text-[10px] font-mono text-slate-400 font-bold">
                   <span>0.1 SOL (Kitten)</span>
-                  <span>50 SOL (Gold Stacker)</span>
-                  <span>100 SOL (Giga Lion)</span>
+                  <span>50 SOL (Calculus Stacker)</span>
+                  <span>100 SOL (Quantum Deities)</span>
                 </div>
               </div>
             </div>
@@ -119,19 +119,19 @@ export default function ProfitFetcher() {
               {/* Output Token count */}
               <div>
                 <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1 font-black">
-                  Estimated $goldcat Reward
+                  Estimated $mathcat Reward
                 </span>
                 
                 <div className="flex items-baseline gap-2 flex-wrap">
                   <span className="text-2xl sm:text-3xl md:text-4xl font-display font-black text-slate-100 text-glow-gold">
-                    {goldcatAmount.toLocaleString()}
+                    {mathcatAmount.toLocaleString()}
                   </span>
-                  <span className="text-primary font-mono text-xs font-black bg-primary/10 border border-primary/20 px-1.5 py-0.5 rounded uppercase">$goldcat</span>
+                  <span className="text-primary font-mono text-xs font-black bg-primary/10 border border-primary/20 px-1.5 py-0.5 rounded uppercase">$mathcat</span>
                 </div>
                 
                 <div className="mt-2 flex items-center gap-1.5 text-[10px] font-mono text-slate-400 font-bold">
                   <Coins className="w-3.5 h-3.5 text-primary" />
-                  <span>Rate: 1 SOL = {RATE.toLocaleString()} $goldcat</span>
+                  <span>Rate: 1 SOL = {RATE.toLocaleString()} $mathcat</span>
                 </div>
               </div>
 
@@ -168,7 +168,7 @@ export default function ProfitFetcher() {
               {/* Small disclaimer footer */}
               <div className="mt-4 pt-3 border-t border-white/10 flex items-center gap-1.5 text-[10px] font-mono text-slate-400 font-bold">
                 <HelpCircle className="w-3.5 h-3.5 text-primary" />
-                <span>Simulated price rate. Green caps, green candles!</span>
+                <span>Theoretical price rate. Q.E.D. Green candles calculated!</span>
               </div>
 
             </div>

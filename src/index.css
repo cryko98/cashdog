@@ -6,55 +6,70 @@
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  --color-primary: #d4af37; /* Gilded Metallic Gold */
-  --color-secondary: #f3c63f; /* Radiant Sun Gold */
-  --color-accent: #aa7c11; /* Deep Bronze Gold */
-  --color-bg-dark: #070605; /* Deep Luxurious Gold-tinted Black */
-  --color-bg-card: #13110d; /* Gilded Card Charcoal-Black */
-  --color-border-dark: #2c2414; /* Metallic Gold-Copper Border */
+  --color-primary: #10b981; /* Chalk Emerald/Green */
+  --color-secondary: #0ea5e9; /* Scientific Cyan */
+  --color-accent: #f59e0b; /* Math Gold/Amber */
+  --color-bg-dark: #070f0d; /* Deep Chalkboard Green-Black */
+  --color-bg-card: #0d1a16; /* Chalkboard Greenish Charcoal Card */
+  --color-border-dark: #1b3830; /* Chalkboard Green Border */
 }
 
 @layer utilities {
-  /* Futuristic gold glow shadows */
+  /* Mathematical neon glow shadows */
   .cyber-glow-gold {
-    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.15);
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.2);
   }
   .cyber-glow-green {
-    box-shadow: 0 4px 20px rgba(243, 198, 63, 0.2);
+    box-shadow: 0 4px 20px rgba(14, 165, 233, 0.25);
   }
   .cyber-glow-accent {
-    box-shadow: 0 4px 20px rgba(170, 124, 17, 0.15);
+    box-shadow: 0 4px 20px rgba(245, 158, 11, 0.2);
   }
   
   /* Glowing text effects */
   .text-glow-gold {
-    text-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+    text-shadow: 0 0 12px rgba(16, 185, 129, 0.6);
   }
   .text-glow-green {
-    text-shadow: 0 0 12px rgba(243, 198, 63, 0.5);
+    text-shadow: 0 0 12px rgba(14, 165, 233, 0.6);
   }
   .text-glow-accent {
-    text-shadow: 0 0 12px rgba(170, 124, 17, 0.4);
+    text-shadow: 0 0 12px rgba(245, 158, 11, 0.5);
   }
 
-  /* Sleek cyber glassmorphism card */
+  /* Sleek math-grid and chalkboard glassmorphism card */
   .cyber-card {
-    background: #13110d;
-    border: 1px solid rgba(212, 175, 55, 0.15);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    background: #0d1a16;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
   }
   .cyber-card-hover {
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .cyber-card-hover:hover {
     transform: translateY(-4px);
-    border-color: rgba(212, 175, 55, 0.5);
-    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.2);
+    border-color: rgba(16, 185, 129, 0.55);
+    box-shadow: 0 12px 30px rgba(16, 185, 129, 0.25);
   }
 
-  /* Neon border scanlines */
+  /* Blackboard Math Grid paper decoration */
+  .math-grid {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(16, 185, 129, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(16, 185, 129, 0.06) 1px, transparent 1px);
+  }
+  
+  .math-grid-fine {
+    background-size: 10px 10px;
+    background-image: 
+      linear-gradient(to right, rgba(16, 185, 129, 0.02) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(16, 185, 129, 0.02) 1px, transparent 1px);
+  }
+
+  /* Neon border scanlines for math charts */
   .cyber-border-gradient {
-    border-image: linear-gradient(to right, #d4af37, #f3c63f) 1;
+    border-image: linear-gradient(to right, #10b981, #0ea5e9) 1;
   }
 }
 
@@ -62,18 +77,19 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar styling */
+/* Custom chalkboard scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #070605;
+  background: #070f0d;
 }
 ::-webkit-scrollbar-thumb {
-  background: #2c2414;
+  background: #1b3830;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #d4af37;
+  background: #10b981;
 }
+
 

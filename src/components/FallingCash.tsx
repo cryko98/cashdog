@@ -1,27 +1,28 @@
 import { useState, useEffect, useCallback } from 'react';
 import { AnimatePresence } from 'motion/react';
 
-interface CashParticle {
+interface MathParticle {
   id: number;
   x: number;
   y: number;
   rotation: number;
   scale: number;
-  type: 'coin' | 'cat' | 'bag' | 'sparkle';
+  type: 'integral' | 'sigma' | 'pi' | 'infinity' | 'root' | 'equation' | 'theta' | 'delta';
   speed: number;
   rotationSpeed: number;
 }
 
 export default function FallingCash() {
-  const [particles, setParticles] = useState<CashParticle[]>([]);
+  const [particles, setParticles] = useState<MathParticle[]>([]);
 
   // Helper to spawn a new particle
   const createParticle = useCallback((
     x: number, 
     y: number, 
-    type?: 'coin' | 'cat' | 'bag' | 'sparkle'
-  ): CashParticle => {
-    const types: ('coin' | 'cat' | 'bag' | 'sparkle')[] = ['coin', 'cat', 'bag', 'sparkle'];
+    type?: 'integral' | 'sigma' | 'pi' | 'infinity' | 'root' | 'equation' | 'theta' | 'delta'
+  ): MathParticle => {
+    const types: ('integral' | 'sigma' | 'pi' | 'infinity' | 'root' | 'equation' | 'theta' | 'delta')[] = 
+      ['integral', 'sigma', 'pi', 'infinity', 'root', 'equation', 'theta', 'delta'];
     const selectedType = type || types[Math.floor(Math.random() * types.length)];
     
     return {
@@ -29,10 +30,10 @@ export default function FallingCash() {
       x,
       y,
       rotation: Math.random() * 360,
-      scale: 0.5 + Math.random() * 0.8,
+      scale: 0.6 + Math.random() * 0.8,
       type: selectedType,
-      speed: 2 + Math.random() * 3,
-      rotationSpeed: (Math.random() - 0.5) * 8,
+      speed: 1.5 + Math.random() * 2.5,
+      rotationSpeed: (Math.random() - 0.5) * 4,
     };
   }, []);
 
@@ -47,7 +48,7 @@ export default function FallingCash() {
         }
         return active;
       });
-    }, 450);
+    }, 400);
 
     return () => clearInterval(interval);
   }, [createParticle]);
@@ -66,11 +67,11 @@ export default function FallingCash() {
         return;
       }
 
-      const burstCount = 6;
-      const newBurst: CashParticle[] = [];
+      const burstCount = 8;
+      const newBurst: MathParticle[] = [];
       for (let i = 0; i < burstCount; i++) {
         const particle = createParticle(e.clientX, e.clientY);
-        particle.speed = 3 + Math.random() * 5;
+        particle.speed = 2.5 + Math.random() * 4;
         newBurst.push(particle);
       }
 
@@ -106,23 +107,45 @@ export default function FallingCash() {
     <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
       <AnimatePresence>
         {particles.map((p) => {
-          let renderEmoji = '🪙';
-          if (p.type === 'cat') renderEmoji = '🐱';
-          if (p.type === 'bag') renderEmoji = '💰';
-          if (p.type === 'sparkle') renderEmoji = '✨';
+          let renderText = 'π';
+          let textColor = 'text-primary/40';
+
+          if (p.type === 'integral') {
+            renderText = '∫';
+            textColor = 'text-secondary/40';
+          } else if (p.type === 'sigma') {
+            renderText = 'Σ';
+            textColor = 'text-primary/40';
+          } else if (p.type === 'infinity') {
+            renderText = '∞';
+            textColor = 'text-accent/40';
+          } else if (p.type === 'root') {
+            renderText = '√x';
+            textColor = 'text-emerald-500/30';
+          } else if (p.type === 'equation') {
+            const eqOptions = ['E=mc²', 'f(x)', 'dy/dx', 'lim→∞', 'x+y=1', 'log(n)'];
+            renderText = eqOptions[Math.floor((p.id * 10) % eqOptions.length)];
+            textColor = 'text-slate-300/35';
+          } else if (p.type === 'theta') {
+            renderText = 'θ';
+            textColor = 'text-primary/30';
+          } else if (p.type === 'delta') {
+            renderText = 'Δ';
+            textColor = 'text-secondary/35';
+          }
 
           return (
             <div
               key={p.id}
-              className="absolute select-none text-xl sm:text-2xl filter drop-shadow-md"
+              className={`absolute select-none font-mono font-bold text-sm sm:text-base filter drop-shadow-sm ${textColor}`}
               style={{
                 left: p.x,
                 top: p.y,
                 transform: `rotate(${p.rotation}deg) scale(${p.scale})`,
-                opacity: 0.5,
+                opacity: 0.65,
               }}
             >
-              {renderEmoji}
+              {renderText}
             </div>
           );
         })}
@@ -130,3 +153,4 @@ export default function FallingCash() {
     </div>
   );
 }
+

@@ -6,7 +6,7 @@ export default function Tokenomics() {
     {
       label: 'Buy / Sell Tax',
       value: '0%',
-      desc: 'No taxes. No friction. Pure feline gold.',
+      desc: 'No taxes. No friction. Pure feline math.',
       icon: <Percent className="w-6 h-6 text-primary" />,
     },
     {
@@ -24,7 +24,7 @@ export default function Tokenomics() {
     {
       label: 'Security Audit',
       value: '100% SAFU',
-      desc: 'Zero backdoor. Elite original code, secure gold vault.',
+      desc: 'Zero backdoor. Elite original code, secure math equations.',
       icon: <ShieldCheck className="w-6 h-6 text-primary" />,
     }
   ];
@@ -47,10 +47,10 @@ export default function Tokenomics() {
               The Math
             </span>
             <h2 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-slate-100 tracking-tight uppercase">
-              👑 <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">GOLDNOMICS</span>
+              👑 <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">MATHNOMICS</span>
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-slate-300 text-sm sm:text-base font-sans">
-              Fair, transparent, and born on the bonding curve. No VC allocations, no team wallets, no hidden unlocks. Just raw community gold.
+              Fair, transparent, and born on the bonding curve. No VC allocations, no team wallets, no hidden unlocks. Just raw community math.
             </p>
           </motion.div>
         </div>
@@ -138,7 +138,7 @@ export default function Tokenomics() {
 
               <div className="mt-8 pt-4 border-t border-border-dark text-center">
                 <span className="text-xs font-mono font-bold text-primary uppercase tracking-widest bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-lg inline-block text-glow-gold">
-                  TOTAL SUPPLY: 1,000,000,000 $goldcat
+                  TOTAL SUPPLY: 1,000,000,000 $mathcat
                 </span>
               </div>
             </div>

@@ -34,8 +34,8 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
     },
     {
       num: '04',
-      title: 'Swap for $goldcat',
-      desc: 'Paste the official Contract Address into the swap panel, select the amount of SOL you want to swap, adjust slippage, and lock in! Let\'s shine!',
+      title: 'Swap for $mathcat',
+      desc: 'Paste the official Contract Address into the swap panel, select the amount of SOL you want to swap, adjust slippage, and lock in! Let\'s solve!',
       icon: <RefreshCw className="w-6 h-6 text-primary" />,
     }
   ];
@@ -65,10 +65,10 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
               How To Acquire
             </span>
             <h2 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-slate-100 tracking-tight uppercase">
-              🛒 How to Buy <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">$goldcat</span>
+              🛒 How to Buy <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">$mathcat</span>
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-slate-300 text-sm sm:text-base">
-              Follow these simple steps to swap your SOL for $goldcat and join the golden standard feline run on Solana.
+              Follow these simple steps to swap your SOL for $mathcat and join the calculated feline run on Solana.
             </p>
           </motion.div>
         </div>
@@ -88,10 +88,10 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
                 Official Smart Contract Address (Solana)
               </span>
               <h3 className="text-lg sm:text-xl font-display font-black text-slate-100 mb-1 uppercase">
-                Copy $goldcat CA to swap safely
+                Copy $mathcat CA to swap safely
               </h3>
               <p className="text-xs text-slate-300 max-w-xl">
-                Always double check the CA before trading! Accept no lookalikes. There is only one genuine Gold Cat contract backed by the gilded treasury.
+                Always double check the CA before trading! Accept no lookalikes. There is only one genuine MathCat contract calculated by the MathCat academy.
               </p>
             </div>
 
@@ -177,7 +177,7 @@ export default function HowToBuy({ contractAddress }: HowToBuyProps) {
                 </a>
               ) : (
                 <span className="text-xs font-mono text-slate-400 font-bold">
-                  Gold-Ready ✨🐱
+                  Math-Ready 📊🐱
                 </span>
               )}
             </motion.div>

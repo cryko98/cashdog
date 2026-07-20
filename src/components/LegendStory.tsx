@@ -5,38 +5,38 @@ export default function LegendStory() {
   const chapters = [
     {
       num: '01',
-      title: 'The Cash Cat Genesis',
-      text: 'It all started in the viral streets of Solana. Cashcat conquered the internet, flooding everyone\'s feeds with hilarious green bills and pure financial hype. It was a legendary era of high-speed trading, internet-wide laughter, and raw meme power.',
+      title: 'The Classroom Legend',
+      text: 'Legend says MathCat sat in the back of an MIT mathematics lecture room for decades, staring at complex blackboard equations. While humans struggled with basic calculus, MathCat was secretly formulating the absolute mathematical law of viral memes.',
       icon: <Award className="w-6 h-6 text-primary" />,
-      badge: "THE MEME OF MEMES",
+      badge: "THE MIT CHALKBOARD",
     },
     {
       num: '02',
-      title: 'The Gilded Alchemy',
-      text: 'But cash is just paper, and paper burns. The community demanded something indestructible. Under the high-speed cosmic rays of the Solana blockchain, Cash Cat went through a complete physical transmutation—emerging as pure, solid Gold Cat!',
+      title: 'Solving Solana',
+      text: 'Tired of watching humans buy random dog coins with negative expected value, MathCat stepped up to the keyboard. Using advanced algebraic topology and game theory, MathCat modeled the ultimate token launch where gains are mathematically guaranteed.',
       icon: <Trophy className="w-6 h-6 text-secondary" />,
-      badge: 'PURE TRANSFORMATION',
+      badge: 'SOLVED EQUATIONS',
     },
     {
       num: '03',
-      title: 'Gold beats Cash',
-      text: 'As everyone knows, gold is infinitely more valuable, scarce, and prestigious than simple paper money. By upgrading to $goldcat, the herd has transcended regular trading. Every single transaction is now coated in royal 24-karat luster.',
+      title: 'The Formula of $mathcat',
+      text: 'By dividing the speed of Solana by the density of cat memes, MathCat discovered the ultimate constant: $mathcat. It is a mathematical fact that 1 $mathcat = 1 $mathcat, but when calculated against the bonding curve, the price approaches infinity.',
       icon: <ShieldAlert className="w-6 h-6 text-primary" />,
-      badge: 'BETTER THAN CASH',
+      badge: 'E = MC^CAT',
     },
     {
       num: '04',
-      title: 'The Royal Peak',
-      text: 'Now, Gold Cat reigns supreme as the ultimate feline standard of wealth. Free of tax, completely community-driven, and locked forever inside the golden vault. We aren\'t just trading anymore—we are building an empire of gold!',
+      title: 'Exponential Paradigm',
+      text: 'Now, the MathCat equation is live! Zero taxes, locked liquidity, and a community of intellectual feline degens. Stop guessing the next trade—trust the numbers, execute the formula, and ride the exponential curve to the moon!',
       icon: <Sparkles className="w-6 h-6 text-primary" />,
-      badge: 'THE GOLDEN STANDARD',
+      badge: 'EXPONENTIAL GROWTH',
     }
   ];
 
   return (
     <section id="story" className="relative py-24 px-4 bg-bg-dark z-20 overflow-hidden border-t border-border-dark">
       {/* Decorative subtle background grid */}
-      <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:24px_24px]" />
+      <div className="absolute inset-0 opacity-[0.08] pointer-events-none bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:24px_24px]" />
 
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
@@ -50,10 +50,10 @@ export default function LegendStory() {
               The Legend
             </span>
             <h2 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-slate-100 tracking-tight uppercase">
-              The Evolution of <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">GOLD CAT</span>
+              The Evolution of <span className="text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-glow-gold">MathCat</span>
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-slate-300 font-sans text-sm sm:text-base">
-              The epic transformation of Solana's most viral feline from cashcat into pure, high-value, indestructible 24k gold.
+              The epic formulation of Solana's most calculated feline, cracking the meme code with 100% mathematical precision.
             </p>
           </motion.div>
         </div>
@@ -95,9 +95,9 @@ export default function LegendStory() {
 
               {/* Card Footer decoration */}
               <div className="mt-8 pt-4 border-t border-border-dark flex justify-between items-center text-xs font-mono text-slate-400">
-                <span>ROYAL SECRETS</span>
+                <span>MATHEMATICAL SECRETS</span>
                 <span className="text-primary font-bold group-hover:translate-x-1 transition-transform duration-300">
-                  SHINING... →
+                  CALCULATING... →
                 </span>
               </div>
             </motion.div>
@@ -114,10 +114,10 @@ export default function LegendStory() {
           <div className="absolute -top-12 -left-12 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none" />
           <div className="absolute -bottom-12 -right-12 w-32 h-32 bg-secondary/5 rounded-full blur-2xl pointer-events-none" />
           <p className="text-xl sm:text-2xl md:text-3xl font-display font-bold italic text-slate-200 leading-snug relative z-10">
-            "Paper cash can be printed forever, but physical gold is eternal. Gold Cat is here to turn your standard paper gains into pure, immutable 24k gold."
+            "Why guess when you can calculate? Mathematics is the language of the universe, and $mathcat is the absolute proof of infinite gains."
           </p>
           <div className="mt-4 text-primary font-mono text-xs uppercase tracking-widest font-bold relative z-10">
-            — THE GOLD CAT STANDARD —
+            — THE MATHCAT ACADEMY —
           </div>
         </motion.div>
       </div>
